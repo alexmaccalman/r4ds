@@ -6,7 +6,7 @@ output: html_document
 ---
 
 
-```{r}
+```{r include = FALSE}
 library(nycflights13)
 flights <- nycflights13::flights
 library(dplyr)
