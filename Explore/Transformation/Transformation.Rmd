@@ -1,0 +1,37 @@
+---
+title: "Transformation"
+author: "alex"
+date: "5/22/2020"
+output: html_document
+---
+
+
+```{r}
+library(nycflights13)
+flights <- nycflights13::flights
+library(dplyr)
+
+```
+
+Find all flights that:
+
+Had an arrival delay of two or more hours
+```{r}
+filter(flights, arr_delay >= 120)
+```
+
+Flew to Houston (IAH or HOU)
+```{r}
+filter(flights, dest %in% c("IAH", "HOU"))
+```
+
+Were operated by United (UA), American (AA), or Delta (DL)
+```{r}
+filter(flights, carrier %in% c("US", "AA", "DL"))
+```
+
+
+Departed in summer (July, August, and September)
+Arrived more than two hours late, but didn’t leave late
+Were delayed by at least an hour, but made up over 30 minutes in flight
+Departed between midnight and 6am (inclusive)
