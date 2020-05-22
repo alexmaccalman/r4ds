@@ -32,6 +32,11 @@ filter(flights, carrier %in% c("US", "AA", "DL"))
 
 
 Departed in summer (July, August, and September)
+```{r}
+filter(flights, month %in% c(7,8,9))
+```
+
+
 Arrived more than two hours late, but didn’t leave late
 Were delayed by at least an hour, but made up over 30 minutes in flight
 Departed between midnight and 6am (inclusive)
