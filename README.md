@@ -4,3 +4,8 @@ Here is the link to the [Solutions Manaul](https://jrnold.github.io/r4ds-exercis
 
 Another resourse is a website that teaches [Tidymodels](https://www.tidymodels.org/start/).
 [Mastering R Shiny](https://mastering-shiny.org/) is another helpful book. 
+
+Links to deep learning with R: [Keras](https://blogs.rstudio.com/ai/posts/2018-01-11-keras-customer-churn).  
+[Kera and LIME](https://iamkbpark.com/2018/01/22/deep-learning-with-keras-lime-in-r/)
+
+
