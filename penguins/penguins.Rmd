@@ -69,7 +69,7 @@ Now we will create a pre-processor and a model. workflow allows us to put pieces
 #work flow sets up a preprocessor and an model
 penguin_wf <- workflow() %>% 
         add_formula(sex ~ .) #this predicts sex with all the predictors. This is the preprocessor.
-#this code fits a logistic regression model
+
 
 ```
 This part sets up the models.  
