@@ -155,5 +155,128 @@ autoplot(lr_auc)
 Let's try another model. 
 
 ## A Second Model: Tree-Based Ensemble.  
+First we have to find out how many cores we have.  
+```{r}
+cores <- parallel::detectCores()
+cores
+```
 
+Now let's set the engine.  
+```{r}
+rf_mod <- 
+  rand_forest(mtry = tune(), min_n = tune(), trees = 1000) %>% 
+  set_engine("ranger", num.threads = cores) %>% 
+  set_mode("classification")
+
+```
+### Create the recipe and workflow.
+Random forest do not need dummy variales or normilizations.  
+```{r}
+rf_recipe <- 
+  recipe(children ~ ., data = hotel_other) %>% 
+  step_date(arrival_date) %>% 
+  step_holiday(arrival_date) %>% 
+  step_rm(arrival_date) 
+
+```
+Now let's create the workflow with the model and the recipe.  
+```{r}
+rf_workflow <- 
+  workflow() %>% 
+  add_model(rf_mod) %>% 
+  add_recipe(rf_recipe)
+
+```
+### Train and Tune the Model. 
+The follwoing are the two hyperparamters we will tune:  
+```{r, cache = TRUE}
+rf_mod
+rf_mod %>%    
+  parameters() 
+```
+The mtry hyperparameter sets the number of predictor variables that each node in the decision tree “sees” and can learn about, so it can range from 1 to the total number of features present. The min_n hyperparameter sets the minimum n to split at any node.  
+use a space-filling design to tune, with 25 candidate models:  
+```{r}
+set.seed(345)
+rf_res <- 
+  rf_workflow %>% 
+  tune_grid(val_set,
+            grid = 25,
+            control = control_grid(save_pred = TRUE),
+            metrics = metric_set(roc_auc))
+#top 5 random forest models:
+rf_res %>% 
+  show_best(metric = "roc_auc")
+#plot results
+autoplot(rf_res)
+```
+Let’s select the best model according to the ROC AUC metric. Our final tuning parameter values are:  
+```{r}
+rf_best <- 
+  rf_res %>% 
+  select_best(metric = "roc_auc")
+rf_best
+```
+To calculate the data needed to plot the ROC curve, we use collect_predictions(). This is only possible after tuning with control_grid(save_pred = TRUE).   
+```{r}
+rf_res %>% 
+  collect_predictions()
+#collect best random forest model.
+rf_auc <- 
+  rf_res %>% 
+  collect_predictions(parameters = rf_best) %>% 
+  roc_curve(children, .pred_children) %>% 
+  mutate(model = "Random Forest")
+#compare the validation set ROC curves for our top penalized logistic regression model and random forest model
+bind_rows(rf_auc, lr_auc) %>% 
+  ggplot(aes(x = 1 - specificity, y = sensitivity, col = model)) + 
+  geom_path(lwd = 1.5, alpha = 0.8) +
+  geom_abline(lty = 3) + 
+  coord_equal() + 
+  scale_color_viridis_d(option = "plasma", end = .6)
+```
+### The last fit.  
+After selecting our best model and hyperparameter values, our last step is to fit the final model on all the rows of data not originally held out for testing (both the training and the validation sets combined), and then evaluate the model performance one last time with the held-out test set.  We’ll start by building our parsnip model object again from scratch. We take our best hyperparameter values from our random forest model. When we set the engine, we add a new argument: importance = "impurity".  
+```{r}
+# the last model
+last_rf_mod <- 
+  rand_forest(mtry = 8, min_n = 7, trees = 1000) %>% 
+  set_engine("ranger", num.threads = cores, importance = "impurity") %>% 
+  set_mode("classification")
+
+# the last workflow
+last_rf_workflow <- 
+  rf_workflow %>% 
+  update_model(last_rf_mod)
+
+# the last fit
+set.seed(345)
+last_rf_fit <- 
+  last_rf_workflow %>% 
+  last_fit(splits)
+
+last_rf_fit
+
+```
+So, how did this model do on the test set?  
+```{r}
+last_rf_fit %>% 
+  collect_metrics()
+```
+We can access those variable importance scores via the .workflow column. We first need to pluck out the first element in the workflow column, then pull out the fit from the workflow object. Finally, the vip package helps us visualize the variable importance scores for the top 20 features:  
+```{r}
+last_rf_fit %>% 
+  pluck(".workflow", 1) %>%   
+  pull_workflow_fit() %>% 
+  vip(num_features = 20)
+
+```
+Let's compare the children true data with the prediction.  
+```{r}
+last_rf_fit %>% 
+  collect_predictions() %>% 
+  roc_curve(children, .pred_children) %>% 
+  autoplot()
+
+```
 
