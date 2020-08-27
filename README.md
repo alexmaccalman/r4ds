@@ -39,12 +39,12 @@ Naive Bayes Classification
 Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest) [Tuning random Forests (video)](https://juliasilge.com/blog/sf-trees-random-tuning/).  | [Tuning 2 (video)](https://juliasilge.com/blog/food-hyperparameter-tune/).  
 ## Unsupervised Learning
 ### Clustering
-K-means  
+K-means [StatQuest K Means Clustering (video)](https://www.youtube.com/watch?v=4b5d3muPQmA).  [K means in R (video)](https://www.youtube.com/watch?v=sAtnX3UJyN0).  
 K Nearest Neighbors (knn, anomaly detection)  
 [Hierarchical Clustering (Article)](https://uc-r.github.io/hc_clustering).  
 [scikit Silouette (website)](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html).  |  [scikit](https://scikit-learn.org/stable/modules/clustering.html ).   
 ### Dimensionality Reduction  
-Principal Coomponent Analysis  [PCA (video)](https://juliasilge.com/blog/best-hip-hop/).  
+Principal Coomponent Analysis  [PCA (video)](https://juliasilge.com/blog/best-hip-hop/).  |  [StatQuest PCA/SVD (video)](https://www.youtube.com/watch?v=FgakZw6K1QQ&vl=en). | [StatQuest in R (video)](https://www.youtube.com/watch?v=0Jp4gsfOLMs&t=50s).  | [PCA Luis (video)](https://www.youtube.com/watch?v=g-Hb26agBFg).  
 Single Value Decomposition  
 
 ### R Shiny  
