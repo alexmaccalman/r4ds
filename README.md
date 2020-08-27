@@ -1,5 +1,5 @@
 # Data Science Roadmap  
-This site outlines my learning resources for this journey.
+This site outlines my learning resources for this journey.  [14 Projects](https://towardsdatascience.com/14-data-science-projects-to-do-during-your-14-day-quarantine-8bd60d1e55e1).  
 ## R Skills  
 [R for Data Science (Book)](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul (Book)](https://jrnold.github.io/r4ds-exercise-solutions/).   
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
@@ -11,6 +11,7 @@ This site outlines my learning resources for this journey.
 [Grammer and Graphics of Data Science (video)](https://rstudio.com/resources/webinars/sparklyr-using-spark-with-rmarkdown/).  
 [Data Wrangling tidyr (video)](https://rstudio.com/resources/webinars/data-wrangling-with-r-and-rstudio/).    
 [Getting Data into R readr (video)](https://rstudio.com/resources/webinars/getting-data-into-r/).  
+[Dates lubridate (video)](https://juliasilge.com/blog/lubridate-london-stage/).  
 ### Grapics
 [ggplot extension libraries (website)](https://exts.ggplot2.tidyverse.org/gallery/).  
 ### Github
@@ -25,17 +26,17 @@ This site outlines my learning resources for this journey.
 [Data Science Map (website)](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
 ## Supervised Learning  
 ### Regression  
-OLS Regression  
+OLS Regression  [Linear Model (video)](https://juliasilge.com/blog/intro-tidymodels/).  | Robust modeling (video)(https://juliasilge.com/blog/beer-production/).  
 Logistic Regression  
 Poisson Regression  
-Regularized Regression  
+Regularized Regression [LASSO Regression (video)(https://juliasilge.com/blog/lasso-the-office/).  
 Support Vector Machines  
 Baysian Regression  [Bayesian Intro (video)](https://www.youtube.com/watch?v=3OJEae7Qb_o). |   [Intro to Bayesian Thinking (Book)](https://statswithr.github.io/book/).   
 [Mixed Models (website)](https://m-clark.github.io/mixed-models-with-R/introduction.html#key-packages).  
 ### Classification  
 Decision Trees     
 Naive Bayes Classification    
-Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest)    
+Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest) [Tuning random Forests (video)](https://juliasilge.com/blog/sf-trees-random-tuning/).  | [Tuning 2 (video)](https://juliasilge.com/blog/food-hyperparameter-tune/).  
 ## Unsupervised Learning
 ### Clustering
 K-means  
@@ -43,7 +44,7 @@ K Nearest Neighbors (knn, anomaly detection)
 [Hierarchical Clustering (Article)](https://uc-r.github.io/hc_clustering).  
 [scikit Silouette (website)](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html).  |  [scikit](https://scikit-learn.org/stable/modules/clustering.html ).   
 ### Dimensionality Reduction  
-Principal Coomponent Analysis  
+Principal Coomponent Analysis  [PCA (video)](https://juliasilge.com/blog/best-hip-hop/).  
 Single Value Decomposition  
 
 ### R Shiny  
