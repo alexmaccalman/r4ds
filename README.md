@@ -26,10 +26,10 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [Data Science Map (website)](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
 ## Supervised Learning  
 ### Regression  
-OLS Regression  [Linear Model (video)](https://juliasilge.com/blog/intro-tidymodels/).  | Robust modeling (video)(https://juliasilge.com/blog/beer-production/).  
+OLS Regression  [Linear Model (video)](https://juliasilge.com/blog/intro-tidymodels/).  | [Robust modeling (video)](https://juliasilge.com/blog/beer-production/).  
 Logistic Regression  
 Poisson Regression  
-Regularized Regression [LASSO Regression (video)(https://juliasilge.com/blog/lasso-the-office/).  
+Regularized Regression [LASSO Regression (video)](https://juliasilge.com/blog/lasso-the-office/).  
 Support Vector Machines  
 Baysian Regression  [Bayesian Intro (video)](https://www.youtube.com/watch?v=3OJEae7Qb_o). |   [Intro to Bayesian Thinking (Book)](https://statswithr.github.io/book/).   
 [Mixed Models (website)](https://m-clark.github.io/mixed-models-with-R/introduction.html#key-packages).  
