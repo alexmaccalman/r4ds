@@ -2,21 +2,33 @@
 This site outlines my learning resources for this journey.
 [Data Science Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
 ## R Skills  
-[R for Data Science](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul](https://jrnold.github.io/r4ds-exercise-solutions/). |   [Mastering R Shiny](https://mastering-shiny.org/).  
- ### Grapics
-[ggplot extension libraries](https://exts.ggplot2.tidyverse.org/gallery/).    
+[R for Data Science](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul](https://jrnold.github.io/r4ds-exercise-solutions/).   
+[John Hopkins](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes](http://sux13.github.io/DataScienceSpCourseNotes/).  
+ 
+### R Shiny  
+[Mastering R Shiny](https://mastering-shiny.org/).   
+[Webinar](https://rstudio.com/resources/webinars/interactive-reporting/).  
 
+## Modeling  
 [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/).  
 [Tidymodels](https://www.tidymodels.org/start/).  
 [Julia Silge](https://juliasilge.com/blog/).  
+[Feature Engineering and Selection](http://www.feat.engineering/).  
 
-
-## Data Specializartion  
-[Materials](http://datasciencespecialization.github.io/).  |   [Notes](http://sux13.github.io/DataScienceSpCourseNotes/).  
-  
 ## Topics  
+
+### Web Scraping
+[Tutorial](https://rstudio.com/resources/webinars/data-science-case-study-an-analysis-in-r-using-a-variety-of-packages-for-web-scraping-and-processing-non-tidy-data-into-tidy-data-frames/).  
+[Collect part 1](https://rstudio.com/resources/webinars/part-1-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/)    [Collect part 2](https://rstudio.com/resources/webinars/part-2-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/).  
+
+### Grapics
+[ggplot extension libraries](https://exts.ggplot2.tidyverse.org/gallery/).  
 ### Forcasting  
 [Forcecasting Book](https://otexts.com/fpp2/the-forecast-package-in-r.html).  
+
+### Test Mining in R  
+[Book](https://www.tidytextmining.com/index.html).  
+[Regular Expression Testing](https://regexr.com/)  |  [Practice](https://regexcrossword.com/).  
 
 ###Clustering  
 [R Article](https://uc-r.github.io/hc_clustering).  
