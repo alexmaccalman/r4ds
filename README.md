@@ -1,79 +1,62 @@
-# R Roadmap
+# Data Science Roadmap  
 This site outlines my learning resources for this journey.
-[Data Science Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
-## Supervised Learning
-
-+Decision Trees
-+Naive Bayes Classification
-+Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest)
-
-### Regression
-OLS Regression
-Logistic REgression
-Poisson Regression
-Regularized Regression
-Support Vector Machines
-
-### Classification
-
-## Unsupervised Learning
-
-### Clustering
-K-means
-K Nearest Neighbors (knn, anomaly detection)
-### Dimensionality Reduction
-Principal Coomponent Analysis
-Single Value Decomposition
-
 ## R Skills  
 [R for Data Science](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul](https://jrnold.github.io/r4ds-exercise-solutions/).   
 [John Hopkins](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes](http://sux13.github.io/DataScienceSpCourseNotes/).  
- 
-### R Shiny  
-[Mastering R Shiny](https://mastering-shiny.org/).   
-[Interactive Reporting](https://rstudio.com/resources/webinars/interactive-reporting/).  
-[Flexdashboard](https://rstudio.com/resources/webinars/introducing-flexdashboards/).  
-## Modeling  
+## Importing Cleaning Tidying  
+### Web Scraping
+[Tutorial](https://rstudio.com/resources/webinars/data-science-case-study-an-analysis-in-r-using-a-variety-of-packages-for-web-scraping-and-processing-non-tidy-data-into-tidy-data-frames/).  
+[Collect part 1](https://rstudio.com/resources/webinars/part-1-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/)    [Collect part 2](https://rstudio.com/resources/webinars/part-2-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/).  
+### Wrangling  
+[Grammer and Graphics of Data Science](https://rstudio.com/resources/webinars/sparklyr-using-spark-with-rmarkdown/).  
+[Data Wrangling tidyr](https://rstudio.com/resources/webinars/data-wrangling-with-r-and-rstudio/).    
+[Getting Data into R readr](https://rstudio.com/resources/webinars/getting-data-into-r/).  
+### Grapics
+[ggplot extension libraries](https://exts.ggplot2.tidyverse.org/gallery/).  
+### Github
+[Github with RStudio](https://rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/). 
+
+## Modeling
 [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/).  
 [Tidymodels](https://www.tidymodels.org/start/).  
 [Julia Silge](https://juliasilge.com/blog/).  
 [Feature Engineering and Selection](http://www.feat.engineering/).  
 
-## Importing Cleaning Tidying  
+[Data Science Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
+## Supervised Learning  
+### Regression  
+OLS Regression  
+Logistic Regression  
+Poisson Regression  
+Regularized Regression  
+Support Vector Machines  
+Baysian Regression  [Sewdish YouTube](https://www.youtube.com/watch?v=3OJEae7Qb_o). |   [Book](https://statswithr.github.io/book/). 
+[Mixed Models](https://m-clark.github.io/mixed-models-with-R/introduction.html#key-packages).  
+### Classification  
+Decision Trees     
+Naive Bayes Classification    
+Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest)    
+## Unsupervised Learning
+### Clustering
+K-means  
+K Nearest Neighbors (knn, anomaly detection)  
+[R Article](https://uc-r.github.io/hc_clustering).  
+[scikit Silouette](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html).  |  [scikit](https://scikit-learn.org/stable/modules/clustering.html ).   
+### Dimensionality Reduction  
+Principal Coomponent Analysis  
+Single Value Decomposition  
 
-### Web Scraping
-[Tutorial](https://rstudio.com/resources/webinars/data-science-case-study-an-analysis-in-r-using-a-variety-of-packages-for-web-scraping-and-processing-non-tidy-data-into-tidy-data-frames/).  
-[Collect part 1](https://rstudio.com/resources/webinars/part-1-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/)    [Collect part 2](https://rstudio.com/resources/webinars/part-2-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/).  
-
-### Wrangling  
-[Grammer and Graphics of Data Science](https://rstudio.com/resources/webinars/sparklyr-using-spark-with-rmarkdown/).  
-[Data Wrangling tidyr](https://rstudio.com/resources/webinars/data-wrangling-with-r-and-rstudio/).    
-[Getting Data into R readr](https://rstudio.com/resources/webinars/getting-data-into-r/).  
-
-### Github
-[Github with RStudio](https://rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/).  
-### Grapics
-[ggplot extension libraries](https://exts.ggplot2.tidyverse.org/gallery/).  
+### R Shiny  
+[Mastering R Shiny](https://mastering-shiny.org/).   
+[Interactive Reporting](https://rstudio.com/resources/webinars/interactive-reporting/).  
+[Flexdashboard](https://rstudio.com/resources/webinars/introducing-flexdashboards/).  
+ 
 ### Forcasting  
 [Forcecasting Book](https://otexts.com/fpp2/the-forecast-package-in-r.html).  
 
 ### Test Mining in R  
 [Book](https://www.tidytextmining.com/index.html).  
 [Regular Expression Testing](https://regexr.com/)  |  [Practice](https://regexcrossword.com/).  
-
-###Clustering  
-[R Article](https://uc-r.github.io/hc_clustering).  
-[scikit Silouette](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html).  |  [scikit](https://scikit-learn.org/stable/modules/clustering.html ).   
- 
-
-
-
-### Mixed Models  
-[Intro](https://m-clark.github.io/mixed-models-with-R/introduction.html#key-packages).  
-
-### Bayesian  
-[Sewdish YouTube](https://www.youtube.com/watch?v=3OJEae7Qb_o). |   [Book](https://statswithr.github.io/book/).   
-
 
 ### SQL  
 [Free Course](https://datamovesme.com/2019/12/30/free-sql-for-data-science-course).  
