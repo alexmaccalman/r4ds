@@ -30,7 +30,7 @@ Logistic Regression
 Poisson Regression  
 Regularized Regression  
 Support Vector Machines  
-Baysian Regression  [Sewdish YouTube (video)](https://www.youtube.com/watch?v=3OJEae7Qb_o). |   [Book](https://statswithr.github.io/book/).   
+Baysian Regression  [Bayesian Intro (video)](https://www.youtube.com/watch?v=3OJEae7Qb_o). |   [Intro to Bayesian Thinking (Book)](https://statswithr.github.io/book/).   
 [Mixed Models (website)](https://m-clark.github.io/mixed-models-with-R/introduction.html#key-packages).  
 ### Classification  
 Decision Trees     
@@ -40,7 +40,7 @@ Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest)
 ### Clustering
 K-means  
 K Nearest Neighbors (knn, anomaly detection)  
-[R Article](https://uc-r.github.io/hc_clustering).  
+[Hierarchical Clustering (Article)](https://uc-r.github.io/hc_clustering).  
 [scikit Silouette (website)](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html).  |  [scikit](https://scikit-learn.org/stable/modules/clustering.html ).   
 ### Dimensionality Reduction  
 Principal Coomponent Analysis  
@@ -54,8 +54,8 @@ Single Value Decomposition
 ### Forcasting  
 [Forcecasting (Book)](https://otexts.com/fpp2/the-forecast-package-in-r.html).  
 
-### Test Mining in R  
-[Book](https://www.tidytextmining.com/index.html).  
+### Text Analysis  
+[Test Mining in R (Book)](https://www.tidytextmining.com/index.html).  
 [Regular Expression Testing (website)](https://regexr.com/)  |  [Practice (website)](https://regexcrossword.com/).  
 
 ### SQL  
