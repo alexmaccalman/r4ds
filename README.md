@@ -2,7 +2,7 @@
 This site outlines my learning resources for this journey.
 [Data Science Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
 ## R Skills  
-[R for Data Science](https://r4ds.had.co.nz/introduction.html) book.  
+|[R for Data Science](https://r4ds.had.co.nz/introduction.html).|[Solutions Manaul](https://jrnold.github.io/r4ds-exercise-solutions/). |[Mastering R Shiny](https://mastering-shiny.org/). |  
 [Solutions Manaul](https://jrnold.github.io/r4ds-exercise-solutions/).  
 [Mastering R Shiny](https://mastering-shiny.org/).    
 
