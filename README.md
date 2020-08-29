@@ -39,7 +39,7 @@ Naive Bayes Classification
 Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest) [Tuning random Forests (video)](https://juliasilge.com/blog/sf-trees-random-tuning/).  | [Tuning 2 (video)](https://juliasilge.com/blog/food-hyperparameter-tune/).  
 ## Unsupervised Learning
 ### Clustering
-K-means [StatQuest K Means Clustering (video)](https://www.youtube.com/watch?v=4b5d3muPQmA).  [K means in R (video)](https://www.youtube.com/watch?v=sAtnX3UJyN0).  
+K-means [StatQuest K Means Clustering (video)](https://www.youtube.com/watch?v=4b5d3muPQmA).  [K means in R (video)](https://www.youtube.com/watch?v=sAtnX3UJyN0).  | [Tidymodels K Means](https://www.tidymodels.org/learn/statistics/k-means/).  
 K Nearest Neighbors (knn, anomaly detection)  
 [Hierarchical Clustering (Article)](https://uc-r.github.io/hc_clustering).  
 [scikit Silouette (website)](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html).  |  [scikit](https://scikit-learn.org/stable/modules/clustering.html ).   
