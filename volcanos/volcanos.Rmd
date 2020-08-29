@@ -54,7 +54,7 @@ volcano_boot <- bootstraps(volcano_df)
 ```
 Now we will create a recipe to prepare our data.  
 ```{r}
-#this package allos us to balance our categories using nearest neighbors.
+#this package allows us to balance our categories using nearest neighbors.
 library(themis)
 volcano_rec <- recipe(volcano_type ~ ., data = volcano_df) %>% 
         update_role(volcano_number, new_role = "Id") %>% #we want to keep volcano_number in the dataset but it is not a predictor or an outcome. This function scopes it out. 
