@@ -2,7 +2,7 @@
 title: "food_hyperparameter_tuning"
 author: "Alex MacCalman"
 date: "8/30/2020"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
