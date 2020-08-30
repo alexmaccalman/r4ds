@@ -36,7 +36,7 @@ Baysian Regression  [Bayesian Intro (video)](https://www.youtube.com/watch?v=3OJ
 ### Classification  
 Decision Trees     
 Naive Bayes Classification    
-Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest) [Tuning random Forests (video)](https://juliasilge.com/blog/sf-trees-random-tuning/).  | [Tuning 2 (video)](https://juliasilge.com/blog/food-hyperparameter-tune/).  
+Ensemble Methods (AdaBoost, Bagging, Gradient Boosted Machine, Random Forest) [Tuning random Forests (video)](https://juliasilge.com/blog/sf-trees-random-tuning/).  | [Tuning 2 (video)](https://juliasilge.com/blog/food-hyperparameter-tune/).  |[XGBoost](https://juliasilge.com/blog/xgboost-tune-volleyball/).  
 ## Unsupervised Learning
 ### Clustering
 K-means [StatQuest K Means Clustering (video)](https://www.youtube.com/watch?v=4b5d3muPQmA).  [K means in R (video)](https://www.youtube.com/watch?v=sAtnX3UJyN0).  | [Tidymodels K Means](https://www.tidymodels.org/learn/statistics/k-means/).  
