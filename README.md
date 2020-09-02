@@ -50,7 +50,8 @@ Single Value Decomposition
 ### R Shiny  
 [Mastering R Shiny Book)](https://mastering-shiny.org/).   
 [Interactive Reporting (video)](https://rstudio.com/resources/webinars/interactive-reporting/).    
-[Flexdashboard (video)](https://rstudio.com/resources/webinars/introducing-flexdashboards/).    
+[Flexdashboard (video)](https://rstudio.com/resources/webinars/introducing-flexdashboards/).  
+[Learn Shiny (videos)](https://shiny.rstudio.com/tutorial/).  
  
 ### Forcasting  
 [Forcecasting (Book)](https://otexts.com/fpp2/the-forecast-package-in-r.html).  
