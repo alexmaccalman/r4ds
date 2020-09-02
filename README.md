@@ -83,4 +83,8 @@ Single Value Decomposition
 ### Docker  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 
+### Gitlab
+[Gitlab workflow (website)](https://shiny.rstudio.com/tutorial/).  
+
+
 
