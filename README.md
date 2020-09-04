@@ -86,5 +86,11 @@ Single Value Decomposition
 ### Gitlab
 [Gitlab workflow (website)](https://shiny.rstudio.com/tutorial/).  
 
+### Open Source Data Versioning  
+[Data Version Contro (website)](https://dvc.org/).  
+
+### MBSE  
+[MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
+
 
 
