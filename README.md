@@ -1,7 +1,10 @@
 # Data Science Roadmap  
 This site outlines my learning resources for this journey.  [14 Projects](https://towardsdatascience.com/14-data-science-projects-to-do-during-your-14-day-quarantine-8bd60d1e55e1).  
 ## R Skills  
-[R for Data Science (Book)](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul (Book)](https://jrnold.github.io/r4ds-exercise-solutions/).   
+[R for Data Science (Book)](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul (Book)](https://jrnold.github.io/r4ds-exercise-solutions/).  
+[R Packages (Book)](http://r-pkgs.had.co.nz/).  
+[StatQuest (videos)](https://statquest.org/video-index/).  
+[RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 ## Importing Cleaning Tidying  
 ### Web Scraping
