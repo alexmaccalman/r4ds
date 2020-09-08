@@ -1,0 +1,282 @@
+---
+title: "Hotel Booking Data"
+author: "Alex MacCalman"
+date: "8/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidymodels)  
+
+# Helper packages
+library(readr)       # for importing data
+library(vip)         # for variable importance plots
+
+```
+
+Import data
+```{r}
+hotels <- 
+  read_csv('https://tidymodels.org/start/case-study/hotels.csv') %>%
+  mutate_if(is.character, as.factor) 
+glimpse(hotels)
+```
+
+We will build a model to prdict whcih actual stays included children and or babies and which did not. Binary variable, none or children.  Let's see the proportion of both.
+```{r}
+hotels %>% 
+  count(children) %>% 
+  mutate(prop = n/sum(n))
+
+```
+The outcome variable is very imbalanced so we will use a stratefied random sample.  
+```{r}
+set.seed(123)
+splits      <- initial_split(hotels, strata = children)
+
+hotel_other <- training(splits)
+hotel_test  <- testing(splits)
+# training set proportions by children. We name this other so we can split this for a validation set.
+hotel_other %>% 
+  count(children) %>% 
+  mutate(prop = n/sum(n))
+
+# test set proportions by children
+hotel_test  %>% 
+  count(children) %>% 
+  mutate(prop = n/sum(n))
+
+```
+
+We will use 10-fold cross-validation as the resampling method (each split into analysis and assessment sets).  We will create a single validation set to use for each of the 10 folds.  
+```{r}
+set.seed(234)
+val_set <- validation_split(hotel_other, 
+                            strata = children, # this ensure we have the same amount of outcome categories in each set.  
+                            prop = 0.80)
+val_set
+```
+## A First Model: Penalized Logistic Regression.  
+he glmnet R package fits a generalized linear model via penalized maximum likelihood. This method of estimating the logistic regression slope parameters uses a penalty on the process so that less relevant predictors are driven towards a value of zero.  
+
+### Build the Model.  
+```{r}
+lr_mod <- 
+  logistic_reg(penalty = tune(), mixture = 1) %>% #penalty is set to tune to allow us to tune the best setting. 
+  set_engine("glmnet")
+
+```
+### Create the Recipe.  
+```{r}
+holidays <- c("AllSouls", "AshWednesday", "ChristmasEve", "Easter", 
+              "ChristmasDay", "GoodFriday", "NewYearsDay", "PalmSunday")
+
+lr_recipe <- 
+  recipe(children ~ ., data = hotel_other) %>% 
+  step_date(arrival_date) %>% # creates predictors for the year, month, and day of the week.
+  step_holiday(arrival_date, holidays = holidays) %>% #generates a set of indicator variables for specific holidays. Although we don’t know where these two hotels are located, we do know that the countries for origin for most stays are based in Europe.
+  step_rm(arrival_date) %>% #removes variables; here we’ll use it to remove the original date variable since we no longer want it in the model.
+  step_dummy(all_nominal(), -all_outcomes()) %>% #converts characters or factors (i.e., nominal variables) into one or more numeric binary model terms for the levels of the original data.
+  step_zv(all_predictors()) %>% #removes indicator variables that only contain a single unique value (e.g. all zeros). This is important because, for penalized models, the predictors should be centered and scaled.
+  step_normalize(all_predictors()) #centers and scales numeric variables.
+
+```
+### Create a Workflow.  
+```{r}
+lr_workflow <- 
+  workflow() %>% 
+  add_model(lr_mod) %>% 
+  add_recipe(lr_recipe)
+```
+### Create the Grid for Tuning.  
+Since we have only one hyperparameter to tune here, we can set the grid up manually using a one-column tibble with 30 candidate values:  
+```{r}
+lr_reg_grid <- tibble(penalty = 10^seq(-4, -1, length.out = 30))
+
+lr_reg_grid %>% top_n(-5) # lowest penalty values
+lr_reg_grid %>% top_n(5)  # highest penalty values
+```
+### Train and Tune the Model.  
+```{r, cache=TRUE}
+library(glmnet())
+lr_res <- 
+  lr_workflow %>% 
+  tune_grid(val_set,
+            grid = lr_reg_grid,
+            control = control_grid(save_pred = TRUE),
+            metrics = metric_set(roc_auc))
+
+```
+Let's plot the validation metrics.  
+```{r}
+lr_plot <- 
+  lr_res %>% 
+  collect_metrics() %>% 
+  ggplot(aes(x = penalty, y = mean)) + 
+  geom_point() + 
+  geom_line() + 
+  ylab("Area under the ROC Curve") +
+  scale_x_log10(labels = scales::label_number())
+
+lr_plot 
+
+```
+Our model performance seems to plateau at the smaller penalty values, so going by the roc_auc metric alone could lead us to multiple options for the “best” value for this hyperparameter:  
+```{r}
+top_models <-
+  lr_res %>% 
+  show_best("roc_auc", n = 15) %>% 
+  arrange(penalty) 
+top_models
+```
+Every candidate model in this tibble likely includes more predictor variables than the model in the row below it. If we used select_best(), it would return candidate model 8 with a penalty value of 0.00053, shown with the dotted line below.  However, we may want to choose a penalty value further along the x-axis, closer to where we start to see the decline in model performance. For example, candidate model 12 with a penalty value of 0.00137 has effectively the same performance as the numerically best model, but might eliminate more predictors. This penalty value is marked by the solid line above. In general, fewer irrelevant predictors is better. If performance is about the same, we’d prefer to choose a higher penalty value.
+
+Let’s select this value and visualize the validation set ROC curve:  
+```{r}
+lr_best <- 
+  lr_res %>% 
+  collect_metrics() %>% 
+  arrange(penalty) %>% 
+  slice(12)
+lr_best
+# plot
+lr_auc <- 
+  lr_res %>% 
+  collect_predictions(parameters = lr_best) %>% 
+  roc_curve(children, .pred_children) %>% 
+  mutate(model = "Logistic Regression")
+
+autoplot(lr_auc)
+```
+Let's try another model. 
+
+## A Second Model: Tree-Based Ensemble.  
+First we have to find out how many cores we have.  
+```{r}
+cores <- parallel::detectCores()
+cores
+```
+
+Now let's set the engine.  
+```{r}
+rf_mod <- 
+  rand_forest(mtry = tune(), min_n = tune(), trees = 1000) %>% 
+  set_engine("ranger", num.threads = cores) %>% 
+  set_mode("classification")
+
+```
+### Create the recipe and workflow.
+Random forest do not need dummy variales or normilizations.  
+```{r}
+rf_recipe <- 
+  recipe(children ~ ., data = hotel_other) %>% 
+  step_date(arrival_date) %>% 
+  step_holiday(arrival_date) %>% 
+  step_rm(arrival_date) 
+
+```
+Now let's create the workflow with the model and the recipe.  
+```{r}
+rf_workflow <- 
+  workflow() %>% 
+  add_model(rf_mod) %>% 
+  add_recipe(rf_recipe)
+
+```
+### Train and Tune the Model. 
+The follwoing are the two hyperparamters we will tune:  
+```{r, cache = TRUE}
+rf_mod
+rf_mod %>%    
+  parameters() 
+```
+The mtry hyperparameter sets the number of predictor variables that each node in the decision tree “sees” and can learn about, so it can range from 1 to the total number of features present. The min_n hyperparameter sets the minimum n to split at any node.  
+use a space-filling design to tune, with 25 candidate models:  
+```{r}
+set.seed(345)
+rf_res <- 
+  rf_workflow %>% 
+  tune_grid(val_set,
+            grid = 25,
+            control = control_grid(save_pred = TRUE),
+            metrics = metric_set(roc_auc))
+#top 5 random forest models:
+rf_res %>% 
+  show_best(metric = "roc_auc")
+#plot results
+autoplot(rf_res)
+```
+Let’s select the best model according to the ROC AUC metric. Our final tuning parameter values are:  
+```{r}
+rf_best <- 
+  rf_res %>% 
+  select_best(metric = "roc_auc")
+rf_best
+```
+To calculate the data needed to plot the ROC curve, we use collect_predictions(). This is only possible after tuning with control_grid(save_pred = TRUE).   
+```{r}
+rf_res %>% 
+  collect_predictions()
+#collect best random forest model.
+rf_auc <- 
+  rf_res %>% 
+  collect_predictions(parameters = rf_best) %>% 
+  roc_curve(children, .pred_children) %>% 
+  mutate(model = "Random Forest")
+#compare the validation set ROC curves for our top penalized logistic regression model and random forest model
+bind_rows(rf_auc, lr_auc) %>% 
+  ggplot(aes(x = 1 - specificity, y = sensitivity, col = model)) + 
+  geom_path(lwd = 1.5, alpha = 0.8) +
+  geom_abline(lty = 3) + 
+  coord_equal() + 
+  scale_color_viridis_d(option = "plasma", end = .6)
+```
+### The last fit.  
+After selecting our best model and hyperparameter values, our last step is to fit the final model on all the rows of data not originally held out for testing (both the training and the validation sets combined), and then evaluate the model performance one last time with the held-out test set.  We’ll start by building our parsnip model object again from scratch. We take our best hyperparameter values from our random forest model. When we set the engine, we add a new argument: importance = "impurity".  
+```{r}
+# the last model
+last_rf_mod <- 
+  rand_forest(mtry = 8, min_n = 7, trees = 1000) %>% 
+  set_engine("ranger", num.threads = cores, importance = "impurity") %>% 
+  set_mode("classification")
+
+# the last workflow
+last_rf_workflow <- 
+  rf_workflow %>% 
+  update_model(last_rf_mod)
+
+# the last fit
+set.seed(345)
+last_rf_fit <- 
+  last_rf_workflow %>% 
+  last_fit(splits)
+
+last_rf_fit
+
+```
+So, how did this model do on the test set?  
+```{r}
+last_rf_fit %>% 
+  collect_metrics()
+```
+We can access those variable importance scores via the .workflow column. We first need to pluck out the first element in the workflow column, then pull out the fit from the workflow object. Finally, the vip package helps us visualize the variable importance scores for the top 20 features:  
+```{r}
+last_rf_fit %>% 
+  pluck(".workflow", 1) %>%   
+  pull_workflow_fit() %>% 
+  vip(num_features = 20)
+
+```
+Let's compare the children true data with the prediction.  
+```{r}
+last_rf_fit %>% 
+  collect_predictions() %>% 
+  roc_curve(children, .pred_children) %>% 
+  autoplot()
+
+```
+

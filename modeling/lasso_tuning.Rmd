@@ -1,0 +1,191 @@
+---
+title: "Lasso_tuning"
+author: "Alex MacCalman"
+date: "9/1/2020"
+output: html_document
+---
+## Lasso Regression with Tuning
+Joins datasets  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Our modeling goal here is to predict the IMDB ratings for episodes of The Office based on the other characteristics of the episodes
+```{r}
+library(tidyverse)
+
+ratings_raw <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-17/office_ratings.csv")
+
+remove_regex <- "[:punct:]|[:digit:]|parts |part |the |and"
+
+office_ratings <- ratings_raw %>% 
+        transmute(episode_name = str_to_lower(title),
+                  episode_name = str_remove_all(episode_name, remove_regex),
+                  episode_name = str_trim(episode_name),
+                  imdb_rating)
+
+office_info <- schrute::theoffice %>% 
+        mutate(
+                season = as.numeric(season),
+                episode = as.numeric(episode),
+                episode_name = str_to_lower(episode_name),
+                episode_name = str_remove_all(episode_name, remove_regex),
+                episode_name = str_trim(episode_name)
+        ) %>% 
+        select(season, episode, episode_name, director, writer, character)
+
+# check differences between episode names in both data sets
+# what names in office_info that are not in office ratings?
+office_ratings %>% distinct(episode_name) %>% anti_join(office_info) %>% distinct(episode_name)
+# what names in office_rating that are not in office info?
+office_info %>% distinct(episode_name) %>% anti_join(office_ratings) %>% distinct(episode_name)
+# clean episode names in office info to be the same as ratings
+office_info <- office_info %>%
+        mutate(episode_name = str_replace(episode_name,"cover", "coverup")) %>% 
+        mutate(episode_name = str_replace(episode_name,"sx ", "sex ")) %>% 
+        mutate(episode_name = str_replace(episode_name,"surveilance", "surveillance"))
+
+```
+Build a data set for modeling  
+```{r}
+# create a data set with the characters, only take the ones with a lot of lines
+characters <- office_info %>%
+  count(episode_name, character) %>%
+  add_count(character, wt = n, name = "character_count") %>%
+  filter(character_count > 800) %>%
+  select(-character_count) %>%
+  pivot_wider(
+    names_from = character,
+    values_from = n,
+    values_fill = list(n = 0)
+  )
+
+# we want to count the director and writer one time (when they are both the same)
+creators <- office_info %>% 
+        distinct(episode_name, director, writer) %>% 
+        pivot_longer(director:writer, names_to = "role", values_to = "person") %>% 
+        separate_rows(person, sep = ";") %>% 
+        add_count(person) %>% 
+        filter(n > 10) %>% 
+        distinct(episode_name, person) %>% 
+        mutate(person_value = 1) %>% #need this for a vlaue from col
+        pivot_wider(names_from = person,
+                    values_from = person_value,
+                    values_fill = list(person_value = 0))
+
+# now we combines all the tables
+office <- office_info %>% 
+        distinct(season, episode, episode_name) %>% 
+        inner_join(characters) %>% #combine the charactors
+        inner_join(creators) %>%  #combine the creators
+        inner_join(office_ratings) %>%  #add the imdb_rating
+        janitor::clean_names()
+
+#make some plots
+office %>% 
+        ggplot(aes(episode, imdb_rating, fill = as.factor(episode))) +
+        geom_boxplot(show.legend = FALSE)
+
+office %>% 
+        ggplot(aes(season, imdb_rating, fill = as.factor(season))) +
+        geom_boxplot(show.legend = FALSE)
+
+```
+## Train a model  
+```{r}
+library(tidymodels)
+office_split <- initial_split(office, strata = season)
+office_train <- training(office_split)
+office_test <- testing(office_split)
+
+# build a recipe
+office_rec <- recipe(imdb_rating ~ ., data = office_train) %>% 
+        update_role(episode_name, new_role = "ID") %>% # used to exclude variable in fit
+        step_zv(all_numeric(), -all_outcomes()) %>% 
+        step_normalize(all_numeric(), -all_outcomes())
+
+office_prep <- office_rec %>% 
+        prep(strings_as_factors = FALSE)
+
+# build a spec
+lasso_spec <- linear_reg(penalty = 0.1, mixture = 1) %>% 
+        set_engine("glmnet")
+#build a workflow
+wf <- workflow() %>% 
+        add_recipe(office_rec) %>% 
+        add_model(lasso_spec)
+
+lasso_fit <- wf %>% 
+        fit(data = office_train)
+# pull out and tidy the fit
+lasso_fit %>% 
+        pull_workflow_fit() %>% 
+        tidy()
+
+```
+## Tune LASSO parameters
+```{r}
+#use resampling and tuning
+set.seed(1234)
+office_boot <- bootstraps(office_train, strata = season)
+
+tune_spec <- linear_reg(penalty = tune(), mixture = 1) %>% 
+        set_engine("glmnet")
+# set up a grid
+lambda_grid <- grid_regular(penalty(),
+             levels = 50)
+
+#set up paralel
+doParallel::registerDoParallel()
+
+set.seed(2020)
+#recreate the workflow to add the tune spec instead of the lasso spec
+wf <- workflow() %>% 
+        add_recipe(office_rec) %>% 
+        add_model(tune_spec)
+
+lasso_grid <- tune_grid(
+        wf,
+        resamples = office_boot,
+        grid = lambda_grid
+)
+
+# build a visual of the metrics to find best value of penalty
+lasso_grid %>% 
+        collect_metrics() %>% 
+        ggplot(aes(penalty, mean, color = .metric)) +
+        geom_errorbar(aes(ymin = mean - std_err,
+                          ymax = mean + std_err),
+                      alpha = 0.5) +
+        geom_line(size = 1.5) +
+        facet_wrap(~.metric, scales = "free", nrow = 2) +
+        scale_x_log10() +
+        theme(legend.position = "none")
+# grab the best penalty based on rmse and save it
+lowest_rmse <- lasso_grid %>% 
+        select_best("rmse")
+# finalize the model, set best
+final_lasso <- finalize_workflow(wf, lowest_rmse)
+
+#look at the variable importance
+library(vip)
+
+#fit the choosen model to the test data
+final_lasso %>% 
+        fit(office_train) %>% 
+        pull_workflow_fit() %>% 
+        vi(lambda = lowest_rmse$penalty) %>% 
+        mutate(Importance = abs(Importance),
+               Variable = fct_reorder(Variable, Importance)) %>% 
+        ggplot(aes(x = Importance, y = Variable, fill = Sign)) +
+        geom_col() +
+        scale_x_continuous(expand = c(0,0)) +
+        labs(y = NULL)
+    
+# now lets package together the best fit. IF we have a workflow with a final wf, with a split with test data, packags all tether the things we need.
+last_fit(final_lasso,
+         office_split) %>% 
+        collect_metrics()
+
+               
+```
+
