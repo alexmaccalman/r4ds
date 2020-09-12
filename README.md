@@ -22,7 +22,8 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 
 ## Modeling
 [Hands-On Machine Learning with R (Book)](https://bradleyboehmke.github.io/HOML/).  
-[Tidymodels (website)](https://www.tidymodels.org/start/).  
+[Tidymodels (website)](https://www.tidymodels.org/start/).
+[Purr practice (website)](https://jennybc.github.io/purrr-tutorial/).  
 [Julia Silge (Blog)](https://juliasilge.com/blog/).  
 [Feature Engineering and Selection (Book)](http://www.feat.engineering/).  
 
