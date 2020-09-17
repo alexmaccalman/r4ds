@@ -7,6 +7,8 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 ## Importing Cleaning Tidying  
+### Loop over Folders  
+[Reading and Combining Files (website)](https://clauswilke.com/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/)  
 ### Web Scraping
 [rvest (video)](https://rstudio.com/resources/webinars/data-science-case-study-an-analysis-in-r-using-a-variety-of-packages-for-web-scraping-and-processing-non-tidy-data-into-tidy-data-frames/).  
 [Collect part 1 (video)](https://rstudio.com/resources/webinars/part-1-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/)   | [Collect part 2 (video)](https://rstudio.com/resources/webinars/part-2-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/).  
