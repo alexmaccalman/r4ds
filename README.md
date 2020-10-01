@@ -3,7 +3,9 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 ## R Skills  
 [R for Data Science (Book)](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul (Book)](https://jrnold.github.io/r4ds-exercise-solutions/).  
 [R Packages (Book)](http://r-pkgs.had.co.nz/).  
+[Tidy Modeling with R (book)](https://www.tmwr.org/).  
 [StatQuest (videos)](https://statquest.org/video-index/).  
+[A visual introduction to probability and statistics (website)(https://seeing-theory.brown.edu/).  
 [RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 ## Importing Cleaning Tidying  
@@ -99,6 +101,9 @@ Single Value Decomposition
 
 ### MBSE  
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
+
+##Python  
+[ML Course in Python (website)](https://mlcourse.ai/).  
 
 
 
