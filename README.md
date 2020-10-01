@@ -5,7 +5,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [R Packages (Book)](http://r-pkgs.had.co.nz/).  
 [Tidy Modeling with R (book)](https://www.tmwr.org/).  
 [StatQuest (videos)](https://statquest.org/video-index/).  
-[A visual introduction to probability and statistics (website)(https://seeing-theory.brown.edu/).  
+[A visual introduction to probability and statistics (website)](https://seeing-theory.brown.edu/).  
 [RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 ## Importing Cleaning Tidying  
