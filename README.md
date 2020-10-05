@@ -8,6 +8,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [R Packages (Book)](http://r-pkgs.had.co.nz/).   
 [RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
+[Introduction to Data Sciewnce with R (course)](https://www.oreilly.com/library/view/introduction-to-data/9781491915028/?cmp=yt-strata-books-videos-product-promo_introduction_to_data_science_with_r).  
 ## Importing Cleaning Tidying  
 ### Loop over Folders  
 [Reading and Combining Files (website)](https://clauswilke.com/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/)  
