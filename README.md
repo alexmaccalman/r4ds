@@ -5,8 +5,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [A visual introduction to probability and statistics (website)](https://seeing-theory.brown.edu/).   
 ## R Skills  
 [R for Data Science (Book)](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul (Book)](https://jrnold.github.io/r4ds-exercise-solutions/).  
-[R Packages (Book)](http://r-pkgs.had.co.nz/).  
-[Tidy Modeling with R (book)](https://www.tmwr.org/).   
+[R Packages (Book)](http://r-pkgs.had.co.nz/).   
 [RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 ## Importing Cleaning Tidying  
@@ -29,7 +28,8 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 
 ## Modeling
 [Hands-On Machine Learning with R (Book)](https://bradleyboehmke.github.io/HOML/).  
-[Tidymodels (website)](https://www.tidymodels.org/start/).
+[Tidymodels (website)](https://www.tidymodels.org/start/).  
+[Tidy Modeling with R (book)](https://www.tmwr.org/).  
 [Purr practice (website)](https://jennybc.github.io/purrr-tutorial/).  
 [Julia Silge (Blog)](https://juliasilge.com/blog/).  
 [Feature Engineering and Selection (Book)](http://www.feat.engineering/).  
