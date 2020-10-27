@@ -36,6 +36,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [Feature Engineering and Selection (Book)](http://www.feat.engineering/).  
 
 [Data Science Map (website)](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
+[A VISUAL INTRODUCTION TO MACHINE LEARNING (website)](http://www.r2d3.us/).  
 ## Supervised Learning  
 ### Regression  
 OLS Regression  [Linear Model (video)](https://juliasilge.com/blog/intro-tidymodels/).  | [Robust modeling (video)](https://juliasilge.com/blog/beer-production/).  
