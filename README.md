@@ -22,6 +22,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [Data Wrangling tidyr (video)](https://rstudio.com/resources/webinars/data-wrangling-with-r-and-rstudio/).    
 [Getting Data into R readr (video)](https://rstudio.com/resources/webinars/getting-data-into-r/).  
 [Dates lubridate (video)](https://juliasilge.com/blog/lubridate-london-stage/).  
+[select, rename, relocate (website)](https://www.tidyverse.org/blog/2020/03/dplyr-1-0-0-select-rename-relocate/)  
 ### Grapics
 [ggplot extension libraries (website)](https://exts.ggplot2.tidyverse.org/gallery/).  
 ### Github
