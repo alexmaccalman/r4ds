@@ -1,0 +1,315 @@
+---
+title: "insurance"
+author: "Alex MacCalman"
+date: "10/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tidymodels)
+library(skimr)
+library(corrr)
+library(naniar)
+```
+
+## Import and examine the data
+```{r}
+raw_data <- read_csv("insuranceTraining.csv")
+skim(raw_data)
+# examine impact of missing values (from naniar package)
+raw_data %>% 
+  select(AGE, JOB, YOJ, INCOME, HOME_VAL, CAR_AGE) %>% 
+  gg_miss_upset()
+
+
+```
+## Clean the data  
+```{r}
+data <- raw_data %>% 
+  mutate(MSTATUS = str_remove_all(MSTATUS, "z_"),
+         SEX = str_remove_all(SEX, "z_"),
+         EDUCATION = str_remove_all(EDUCATION, "[z_ | <]"),
+         #EDUCATION = str_remove_all(EDUCATION, "<"),
+         JOB = str_remove_all(JOB, "z_"),
+         CAR_TYPE = str_remove_all(CAR_TYPE, "z_"),
+         URBANICITY = str_remove_all(URBANICITY, "z_"),
+         URBANICITY = ifelse(URBANICITY == "Highly Urban/ Urban", "Urban", "Rural"),
+         INCOME = as.numeric(str_remove_all(INCOME, "[$ | ,]")),
+         HOME_VAL = as.numeric(str_remove_all(HOME_VAL, "[$ | ,]")),
+        # HOME_VAL = ifelse(is.na(HOME_VAL), 0, HOME_VAL),
+         OLDCLAIM = as.numeric(str_remove_all(OLDCLAIM, "[$ | ,]")),
+         BLUEBOOK = as.numeric(str_remove_all(BLUEBOOK, "[$ | ,]")),
+         TARGET_FLAG = as.factor(TARGET_FLAG)) 
+       
+skim(data)
+
+
+
+```
+## Examine numberic correlations
+```{r}
+all_numeric <- select_if(data, is.numeric)
+cor <- correlate(all_numeric)
+cor %>% 
+  focus(TARGET_AMT) %>% 
+  mutate(rowname = reorder(rowname, TARGET_AMT)) %>% 
+  ggplot(aes(rowname, TARGET_AMT)) +
+  geom_col() + 
+  coord_flip()
+
+cor %>% 
+  rearrange(method = "MDS", absolute = FALSE) %>% 
+  shave() %>% 
+  rplot(shape = 15, colors = c("red", "green"))
+
+cor %>% network_plot()
+```
+Not much concern with numeric correlations. 
+## Visualize  
+```{r}
+
+data %>% 
+  ggplot(aes(y = TARGET_AMT, col = CAR_TYPE)) +
+  geom_boxplot()
+
+data %>% 
+  ggplot(aes(x = HOME_VAL, y = TARGET_AMT, col = CAR_TYPE)) +
+  geom_point()
+
+data %>% 
+  ggplot(aes(x = INCOME)) +
+  geom_histogram()
+
+```
+
+
+# Build a penalized logitistics regression on TARGET_FLAG  
+### Create the data splits and cross validation sets
+```{r}
+set.seed(123)
+splits <- initial_split(data = data , strata = TARGET_FLAG)
+train_data <- training(splits)
+test_data <- testing(splits)
+
+# create a single resample called val_set instead of using 10 fold cross validation 
+set.seed(234)
+val_set <- validation_split(train_data,
+                            strata = TARGET_FLAG,
+                            prop = 0.8)
+```
+### Build the penalized logistic regression model  
+```{r, cache = TRUE}
+# build model
+pl_model <-
+  logistic_reg(penalty = tune(), mixture = 0.5) %>%  
+  set_engine("glmnet")
+# create recipe
+pl_recipe <- 
+  recipe(TARGET_FLAG ~ ., data = data) %>% 
+  update_role(TARGET_AMT, new_role = "other outcome") %>% 
+  step_dummy(all_nominal(), -all_outcomes()) %>% 
+  step_knnimpute(all_predictors()) #impute all NA's using KNN
+
+imputed <- prep(pl_recipe) %>%  juice()
+#check that the imputation worked
+skim(imputed)
+# create workflow
+pl_workflow <- 
+  workflow() %>% 
+  add_model(pl_model) %>% 
+  add_recipe(pl_recipe)
+```
+### Create grid for tuning
+```{r}
+pl_reg_grid <- tibble(penalty = 10^seq(-4, -1, length.out = 30))
+
+pl_reg_grid %>% top_n(-5) # lowest penalty values
+pl_reg_grid %>% top_n(5)  # highest penalty values
+```
+### Train and Tune the model  
+```{r, cache = TRUE}
+#set up parallel processing
+doParallel::registerDoParallel()
+library(glmnet())
+pl_res <- 
+  pl_workflow %>% 
+  tune_grid(val_set,
+            grid = pl_reg_grid,
+            control = control_grid(save_pred = TRUE),
+            metrics = metric_set(roc_auc))
+```
+### Plot the validation metrics
+```{r}
+pl_plot <- 
+  pl_res %>% 
+  collect_metrics() %>% 
+  ggplot(aes(x = penalty, y = mean)) + 
+  geom_point() + 
+  geom_line() + 
+  ylab("Area under the ROC Curve") +
+  scale_x_log10(labels = scales::label_number())
+
+pl_plot
+```
+### Pick the best model  
+```{r}
+top_models <-
+  pl_res %>% 
+  show_best("roc_auc", n = 30) %>% 
+  arrange(penalty) 
+top_models # we want to pick the highest penalty we can to reduce predictors
+
+pl_best <- 
+  pl_res %>% 
+  collect_metrics() %>% 
+  arrange(penalty) %>% 
+  slice(25)
+pl_best
+pen <- pl_best$penalty
+# plot
+pl_auc <- 
+  pl_res %>% 
+  collect_predictions(parameters = pl_best) %>% 
+  roc_curve(TARGET_FLAG, .pred_0) %>% 
+  mutate(model = "Logistic Regression")
+
+autoplot(pl_auc)
+```
+best model has a penalty of 0.0001
+### Fit Final penalized regression model
+```{r}
+# the last model
+last_pl_mod <- 
+  logistic_reg(penalty = 0.03, mixture = 1) %>%  
+  set_engine("glmnet")
+  
+# the last workflow
+last_pl_workflow <- 
+  pl_workflow %>% 
+  update_model(last_pl_mod)
+#the last fit
+set.seed(345)
+last_pl_fit <- 
+  last_pl_workflow %>% 
+  last_fit(splits)
+
+last_pl_fit
+#collect metrics from the test set
+last_pl_fit %>% 
+  collect_metrics()
+# examine the most important variables
+library(vip)
+last_pl_fit %>% 
+  pluck(".workflow", 1) %>%   
+  pull_workflow_fit() %>% 
+  vip(num_features = 50)
+
+# collect predictions and build a confusion matrix
+last_pl_fit %>% 
+  collect_predictions() %>% 
+  conf_mat(TARGET_FLAG, .pred_class)
+
+final_pl_fit <- 
+  pl_workflow %>% 
+  update_model(last_pl_mod) %>% 
+  fit(data = data)
+```
+
+### Add predictions of probability of crash to the training set
+```{r}
+# predict the probabilities in the training set using the penalized linear regression model
+prob_crash <- 
+  predict(final_pl_fit, new_data = train_data, type = "prob")
+# add predictions to the training set
+train_data <- train_data %>% 
+  mutate(prob_crash = prob_crash$.pred_0)
+# predict the probabilities in the testing set using the penalized linear regression model
+prob_crash <- 
+  predict(final_pl_fit, new_data = test_data, type = "prob")
+# add predictions to the testing set
+test_data <- test_data %>% 
+  mutate(prob_crash = prob_crash$.pred_0)
+```
+# Build a regression model using probability of crash as a new predictor. Build a xgboost model with TARGET_AMT as the outcome/response  
+```{r}
+#make model specification
+xgb_spec <- boost_tree(
+        trees = 1000,
+        tree_depth = tune(), min_n = tune(), loss_reduction = tune(),
+        sample_size = tune(), mtry = tune(),
+        learn_rate = tune()) %>% 
+        set_engine("xgboost") %>% 
+        set_mode("regression")
+
+#set up what values we will try
+xgb_grid <- grid_latin_hypercube(
+        tree_depth(),
+        min_n(),
+        loss_reduction(),
+        sample_size = sample_prop(), 
+        finalize(mtry(), train_data),
+        learn_rate(),
+        size = 10
+)
+#set up a workflow
+xgb_wf <- workflow() %>% 
+        add_formula(TARGET_AMT ~ .) %>% 
+        add_model(xgb_spec)
+```
+### Tune the xgboost model  
+```{r, cache=TRUE}
+doParallel::registerDoParallel()
+
+set.seed(234)
+starttime <- Sys.time()
+xbg_res<- tune_grid(
+        xgb_wf,
+        resamples = val_set,
+        grid = xgb_grid,
+        control = control_grid(save_pred = TRUE)
+)
+endtime <- Sys.time()
+tottime <- endtime - starttime
+```
+
+### Find the best
+```{r}
+xbg_res %>%
+  collect_metrics() %>%
+  filter(.metric == "rmse") %>%
+  select(mean, mtry:sample_size) %>%
+  pivot_longer(mtry:sample_size,
+               values_to = "value",
+               names_to = "parameter"
+  )
+
+show_best(xbg_res, "rmse")
+
+best_rmse <- select_best(xbg_res, "rmse")
+
+# finalize the workflow
+final_xgb <- finalize_workflow(xgb_wf, best_rmse)
+#fit the final model and do variable importance
+final_xgb %>% 
+        fit(data = train_data) %>% 
+        pull_workflow_fit() %>% 
+        vip(geom = "point")
+```
+
+pull out the final model
+```{r}
+# Fit the final best model to the training set and evaluate the test set
+final_res <- last_fit(final_xgb, split)
+final_res %>% 
+        collect_metrics()
+
+final_res %>% 
+        collect_predictions() %>% 
+        conf_mat(TARGET_AMT, .pred_class)
+
+final_res %>% 
+        collect_predictions() %>% 
+        roc_curve(TARGET_AMT, .pred_lose) %>% 
+        autoplot()

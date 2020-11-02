@@ -103,7 +103,7 @@ volcano_res %>%
 
 volcano_res %>% 
         collect_predictions() %>% 
-        group_by(id) %>% #group by id ot look at each bootstrap sample result
+        group_by(id) %>% #group by id to look at each bootstrap sample result
         ppv(volcano_type, .pred_class) %>% #positive prediction values
         ggplot(aes(.estimate)) +
         geom_histogram(bins = 10)

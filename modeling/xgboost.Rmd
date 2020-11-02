@@ -73,8 +73,7 @@ xgb_spec <- boost_tree(
         trees = 1000,
         tree_depth = tune(), min_n = tune(), loss_reduction = tune(),
         sample_size = tune(), mtry = tune(),
-        learn_rate = tune()
-) %>% 
+        learn_rate = tune()) %>% 
         set_engine("xgboost") %>% 
         set_mode("classification")
 
@@ -136,7 +135,7 @@ best_auc <- select_best(xbg_res, "roc_auc")
 
 # finalize the workflow
 final_xgb <- finalize_workflow(xgb_wf, best_auc)
-#fit the final model ad do variable importance
+#fit the final model and do variable importance
 library(vip)
 final_xgb %>% 
         fit(data = vb_train) %>% 
