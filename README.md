@@ -35,6 +35,8 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [Purr practice (website)](https://jennybc.github.io/purrr-tutorial/).  
 [Julia Silge (Blog)](https://juliasilge.com/blog/).  
 [Feature Engineering and Selection (Book)](http://www.feat.engineering/).  
+[Feature Engineering (sldies)]{https://www.cs.princeton.edu/courses/archive/spring10/cos424/slides/18-feat.pdf}.  
+[Featrue Engineering O'Reilly (book)](https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/?sortby=bestSellers).  
 
 [Data Science Map (website)](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html).  
 [A VISUAL INTRODUCTION TO MACHINE LEARNING (website)](http://www.r2d3.us/).  
@@ -108,6 +110,8 @@ Single Value Decomposition
 
 ##Python  
 [ML Course in Python (website)](https://mlcourse.ai/).  
+
+[Leading with Technology Snehal Antani (podcast)](https://anchor.fm/def-community/episodes/Leading-with-Technology-Snehal-Antani---Tech-Leader-Series-1-egaono).  
 
 
 
