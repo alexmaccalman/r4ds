@@ -108,8 +108,9 @@ Single Value Decomposition
 ### MBSE  
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
 
-##Python  
+## Python  
 [ML Course in Python (website)](https://mlcourse.ai/).  
+[Hands-on Machine Learning with Scikit learn KEras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 
 [Leading with Technology Snehal Antani (podcast)](https://anchor.fm/def-community/episodes/Leading-with-Technology-Snehal-Antani---Tech-Leader-Series-1-egaono).  
 
