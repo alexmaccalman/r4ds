@@ -75,6 +75,8 @@ Single Value Decomposition
 ### Text Analysis  
 [Test Mining in R (Book)](https://www.tidytextmining.com/index.html).  
 [Regular Expression Testing (website)](https://regexr.com/)  |  [Practice (website)](https://regexcrossword.com/).  
+[Text Analytics with R (videos)](https://www.youtube.com/watch?v=4vuw0AsHeGw&list=PL8eNk_zTBST8olxIRFoo0YeXxEOkYdoxi).  
+[Text Analytics with R (repo)](https://github.com/datasciencedojo/IntroToTextAnalyticsWithR).  
 
 ### SQL  
 [Free Course](https://datamovesme.com/2019/12/30/free-sql-for-data-science-course).  
