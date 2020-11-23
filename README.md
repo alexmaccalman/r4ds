@@ -10,10 +10,9 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 [Introduction to Data Science with R (course)](https://www.oreilly.com/library/view/introduction-to-data/9781491915028/?cmp=yt-strata-books-videos-product-promo_introduction_to_data_science_with_r).  
 ## Importing Cleaning Tidying  
-### Loop over Folders  
-[Reading and Combining Files (website)](https://clauswilke.com/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/)  
 ### R files manipulation  
 [HOW TO CREATE, DELETE, MOVE, AND MORE WITH FILES (website)](http://theautomatic.net/2018/07/11/manipulate-files-r/)  
+[Loop over Folders, Reading and Combining Files (website)](https://clauswilke.com/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/).  
 ### Web Scraping
 [rvest (video)](https://rstudio.com/resources/webinars/data-science-case-study-an-analysis-in-r-using-a-variety-of-packages-for-web-scraping-and-processing-non-tidy-data-into-tidy-data-frames/).  
 [Collect part 1 (video)](https://rstudio.com/resources/webinars/part-1-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/)   | [Collect part 2 (video)](https://rstudio.com/resources/webinars/part-2-easy-ways-to-collect-different-types-of-data-from-the-web-with-r/).  
