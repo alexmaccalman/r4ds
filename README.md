@@ -25,6 +25,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 [select, rename, relocate (website)](https://www.tidyverse.org/blog/2020/03/dplyr-1-0-0-select-rename-relocate/)  
 ### Grapics
 [ggplot extension libraries (website)](https://exts.ggplot2.tidyverse.org/gallery/).  
+[Animating Your Data Visualizations (article)](https://towardsdatascience.com/animating-your-data-visualizations-like-a-boss-using-r-f94ae20843e3).  
 ### Github
 [Github with RStudio (video)](https://rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/). 
 
