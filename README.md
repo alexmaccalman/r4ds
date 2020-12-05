@@ -25,6 +25,7 @@ This site outlines my learning resources for this journey.  [14 Projects](https:
 ### Grapics
 [ggplot extension libraries (website)](https://exts.ggplot2.tidyverse.org/gallery/).  
 [Animating Your Data Visualizations (article)](https://towardsdatascience.com/animating-your-data-visualizations-like-a-boss-using-r-f94ae20843e3).  
+[ggExtra Marginal histograms with Scatter Plots (repo)](https://github.com/daattali/ggExtra).  
 ### Github
 [Github with RStudio (video)](https://rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/). 
 
@@ -68,6 +69,7 @@ Single Value Decomposition
 [Interactive Reporting (video)](https://rstudio.com/resources/webinars/interactive-reporting/).    
 [Flexdashboard (video)](https://rstudio.com/resources/webinars/introducing-flexdashboards/).  
 [Learn Shiny (videos)](https://shiny.rstudio.com/tutorial/).  
+[Persistent data storage in Shiny apps (website)](https://shiny.rstudio.com/articles/persistent-data-storage.html).  | [Demo](https://daattali.com/shiny/persistent-data-storage/)  
  
 ### Forcasting  
 [Forcecasting (Book)](https://otexts.com/fpp2/the-forecast-package-in-r.html).  
