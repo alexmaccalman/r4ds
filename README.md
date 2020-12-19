@@ -98,8 +98,8 @@ Single Value Decomposition
 
 ## Cloud  
 ### Azure 
-[Data Science Cert (website)](https://docs.microsoft.com/en-us/learn/certifications/roles/data-scientist).  
-
+[Azure Learning (website)](https://docs.microsoft.com/en-us/users/alexmaccalman-4148/).  
+[Azure Fundementals Course (website)](https://marczak.io/az-900/).  
 ### Docker  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 
@@ -117,6 +117,9 @@ Single Value Decomposition
 [Hands-on Machine Learning with Scikit learn KEras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 
 [Leading with Technology Snehal Antani (podcast)](https://anchor.fm/def-community/episodes/Leading-with-Technology-Snehal-Antani---Tech-Leader-Series-1-egaono).  
+
+## AI 
+[Berkeley AI Course (website)](http://ai.berkeley.edu/home.html).  
 
 
 
