@@ -100,6 +100,7 @@ Single Value Decomposition
 ### Azure 
 [Azure Learning (website)](https://docs.microsoft.com/en-us/users/alexmaccalman-4148/).  
 [Azure Fundementals Course (website)](https://marczak.io/az-900/).  
+[Azure for Everyone (website)](https://www.youtube.com/azure4everyone).  
 ### Docker  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 
