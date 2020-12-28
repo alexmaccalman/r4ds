@@ -1,8 +1,9 @@
 # Data Science Roadmap  
-This site outlines my learning resources for this journey.  [14 Projects](https://towardsdatascience.com/14-data-science-projects-to-do-during-your-14-day-quarantine-8bd60d1e55e1).  
+This site outlines my learning resources for this journey.  [Projects](https://towardsdatascience.com/the-step-by-step-curriculum-im-using-to-teach-myself-data-science-in-2021-c8eab834a87c).  
 ## Statistics
 [StatQuest (videos)](https://statquest.org/video-index/).  
 [A visual introduction to probability and statistics (website)](https://seeing-theory.brown.edu/).   
+[Machine Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks).  
 ## R Skills  
 [R for Data Science (Book)](https://r4ds.had.co.nz/introduction.html). |  [Solutions Manaul (Book)](https://jrnold.github.io/r4ds-exercise-solutions/).  
 [R Packages (Book)](http://r-pkgs.had.co.nz/).   
