@@ -115,8 +115,12 @@ Single Value Decomposition
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
 
 ## Python  
+[Python for Everyone (website)](https://www.py4e.com/lessons).  
+[Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
+[Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
+[Reinforcement Learning (course)](https://www.coursera.org/specializations/reinforcement-learning?).  
 [ML Course in Python (website)](https://mlcourse.ai/).  
-[Hands-on Machine Learning with Scikit learn KEras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
+[Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 
 [Leading with Technology Snehal Antani (podcast)](https://anchor.fm/def-community/episodes/Leading-with-Technology-Snehal-Antani---Tech-Leader-Series-1-egaono).  
 
