@@ -27,7 +27,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [ggplot extension libraries (website)](https://exts.ggplot2.tidyverse.org/gallery/).  
 [Animating Your Data Visualizations (article)](https://towardsdatascience.com/animating-your-data-visualizations-like-a-boss-using-r-f94ae20843e3).  
 [ggExtra Marginal histograms with Scatter Plots (repo)](https://github.com/daattali/ggExtra).  
-[Tablaau in R](https://link.medium.com/URiZZt0dGcb).  
+[Tableau in R](https://link.medium.com/URiZZt0dGcb).  
 ### Github
 [Github with RStudio (video)](https://rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/). 
 
