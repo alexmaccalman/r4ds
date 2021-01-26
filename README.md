@@ -105,7 +105,7 @@ Single Value Decomposition
 [Azure Fundementals Course (website)](https://marczak.io/az-900/).  
 [Azure for Everyone (website)](https://www.youtube.com/azure4everyone).  
 [Azure and R (repo)](https://github.com/revodavid/R-at-Microsoft).  
-[Data Engineering Associate (learning path)](https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer) | [Data Integration (learning path)](https://docs.microsoft.com/en-us/learn/paths/data-integration-scale-azure-data-factory/) | [Azure Machine Learning (learning path)](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/).  
+[Data Engineering Associate (learning path)](https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer) | [Data Integration (learning path)](https://docs.microsoft.com/en-us/learn/paths/data-integration-scale-azure-data-factory/) | [Azure Machine Learning (learning path)](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/).  | [Azure Data Fundementals](https://docs.microsoft.com/en-us/users/microsoftazuretrainingandcertifications/collections/0kjyh8rn5gdrjj?source=docs).  
 [Modern Data Warehousing (video)](https://www.youtube.com/watch?v=lcFDrIbTyxE).  
 ### Docker  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
