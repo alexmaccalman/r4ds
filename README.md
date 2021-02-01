@@ -86,6 +86,7 @@ Single Value Decomposition
 [Free Course](https://datamovesme.com/2019/12/30/free-sql-for-data-science-course).  
 [What is a database model (website)](https://www.lucidchart.com/pages/database-diagram/database-models#section_0).  
 [SQL Practice](https://selectstarsql.com/).  
+[Databases in R](https://db.rstudio.com/).  
 
 ## Big Data in R  
 [Working with Big Data in R (video)](https://rstudio.com/resources/webinars/working-with-big-data-in-r/).  
