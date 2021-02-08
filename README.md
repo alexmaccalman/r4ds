@@ -111,8 +111,8 @@ Single Value Decomposition
 [Modern Data Warehousing (video)](https://www.youtube.com/watch?v=lcFDrIbTyxE).  
 [Data Fundamentals Book](https://www.skillpipe.com/#/reader/6700b377-7e7a-54e2-9338-6c739a7efdec/content).  
 [Azure Modern Data Warehouse lab](https://github.com/Adatis/ModernDataWarehouseWorkshop).  
-[Azure AI Fundemental Exercises](https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3-create-image-classifier).
-[Azure Data Engineering LAbs (repo)](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions).  
+[Azure AI Fundemental Exercises](https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3-create-image-classifier).  
+[Azure Data Engineering Labs (repo)](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions).  
 ### Docker/Kubernetetes  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 [Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
