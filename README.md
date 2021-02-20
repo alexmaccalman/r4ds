@@ -103,7 +103,8 @@ Single Value Decomposition
 
 ## Cloud  
 ### Azure 
-[ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda).  
+[ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
+[DP200 Exam Prep](https://www.cathrinewilhelmsen.net/preparing-taking-microsoft-exam-dp-200-implementing-azure-data-solution/).  
 [Azure Learning (website)](https://docs.microsoft.com/en-us/users/alexmaccalman-4148/).  
 [Azure Fundementals Course (website)](https://marczak.io/az-900/).  
 [Azure for Everyone (website)](https://www.youtube.com/azure4everyone).  
