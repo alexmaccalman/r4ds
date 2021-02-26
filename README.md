@@ -81,6 +81,7 @@ Single Value Decomposition
 [Regular Expression Testing (website)](https://regexr.com/)  |  [Practice (website)](https://regexcrossword.com/).  
 [Text Analytics with R (videos)](https://www.youtube.com/watch?v=4vuw0AsHeGw&list=PL8eNk_zTBST8olxIRFoo0YeXxEOkYdoxi).  
 [Text Analytics with R (repo)](https://github.com/datasciencedojo/IntroToTextAnalyticsWithR).  
+[Tidytext Tutorial](https://juliasilge.shinyapps.io/learntidytext/#section-introduction).  
 
 ### SQL  
 [Free Course](https://datamovesme.com/2019/12/30/free-sql-for-data-science-course).  
@@ -109,7 +110,8 @@ Single Value Decomposition
 [Azure Fundementals Course (website)](https://marczak.io/az-900/).  
 [Azure for Everyone (website)](https://www.youtube.com/azure4everyone).  
 [Azure and R (repo)](https://github.com/revodavid/R-at-Microsoft).  
-[Data Engineering Associate (learning path)](https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer) | [Data Integration (learning path)](https://docs.microsoft.com/en-us/learn/paths/data-integration-scale-azure-data-factory/) | [Azure Machine Learning (learning path)](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/).  | [Azure Data Fundementals](https://docs.microsoft.com/en-us/users/microsoftazuretrainingandcertifications/collections/0kjyh8rn5gdrjj?source=docs). | [Power BI](https://docs.microsoft.com/en-us/learn/certifications/exams/da-100).   
+[Data Engineering Associate (learning path)](https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer) | [Data Integration (learning path)](https://docs.microsoft.com/en-us/learn/paths/data-integration-scale-azure-data-factory/) | [Azure Machine Learning (learning path)](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/).  | [Azure Data Fundementals](https://docs.microsoft.com/en-us/users/microsoftazuretrainingandcertifications/collections/0kjyh8rn5gdrjj?source=docs). | [Power BI](https://docs.microsoft.com/en-us/learn/certifications/exams/da-100). 
+[Migrate SQL Workloads to Azure](https://docs.microsoft.com/en-us/learn/paths/migrate-sql-workloads-azure/).  
 [Modern Data Warehousing (video)](https://www.youtube.com/watch?v=lcFDrIbTyxE).  
 [Data Fundamentals Book](https://www.skillpipe.com/#/reader/6700b377-7e7a-54e2-9338-6c739a7efdec/content).  
 [Azure Modern Data Warehouse lab](https://github.com/Adatis/ModernDataWarehouseWorkshop).  
@@ -129,6 +131,7 @@ Single Value Decomposition
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
 
 ## Python  
+[Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
 [Python for Everyone (website)](https://www.py4e.com/lessons).  
 [Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
 [Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
