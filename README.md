@@ -1,5 +1,9 @@
 # Data Science Roadmap  
 This site outlines my learning resources for this journey.  [Projects](https://towardsdatascience.com/the-step-by-step-curriculum-im-using-to-teach-myself-data-science-in-2021-c8eab834a87c).  
+## Agile processes  
+[Epics, Features and User Stories](https://medium.com/webill/epics-features-and-user-stories-21be70d1ac17#:~:text=Epics%20%E2%80%94%20are%20the%20overarching%20project%20master%2C%20that,could%20also%20just%20carry%20the%20project%20code%20name).  
+[Define Features and Epics](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&tabs=agile-process).  
+
 ## Statistics
 [StatQuest (videos)](https://statquest.org/video-index/).  
 [A visual introduction to probability and statistics (website)](https://seeing-theory.brown.edu/).   
