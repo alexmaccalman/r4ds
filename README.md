@@ -122,6 +122,7 @@ Single Value Decomposition
 [Azure AI Fundemental Exercises](https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3-create-image-classifier).  
 [Azure Data Engineering Labs (repo)](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions).  
 [DP-203T00-Data-Engineering-on-Microsoft-Azure](https://github.com/MicrosoftLearning/DP-203T00-Data-Engineering-on-Microsoft-Azure).  
+[Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
 ### Docker/Kubernetetes  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 [Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
@@ -137,6 +138,7 @@ Single Value Decomposition
 
 ## Python  
 [Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
+[Automate the Boring Stuff](https://www.udemy.com/course/automate/learn/lecture/3465804#overview).  
 [Python for Everyone (website)](https://www.py4e.com/lessons).  
 [Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
 [Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
