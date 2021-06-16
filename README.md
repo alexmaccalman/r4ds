@@ -1,5 +1,41 @@
-# Data Science Roadmap  
+# Digital Skillset Roadmap  
 This site outlines my learning resources for this journey.  [Projects](https://towardsdatascience.com/the-step-by-step-curriculum-im-using-to-teach-myself-data-science-in-2021-c8eab834a87c).  
+
+## Python  
+[Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
+[Automate the Boring Stuff](https://www.udemy.com/course/automate/learn/lecture/3465804#overview).  
+[Python for Everyone (website)](https://www.py4e.com/lessons).  
+[Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
+[Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
+[Reinforcement Learning (course)](https://www.coursera.org/specializations/reinforcement-learning?).  
+[ML Course in Python (website)](https://mlcourse.ai/).  
+[Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
+
+## Cloud  
+### Azure 
+[ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
+[DP200 Exam Prep](https://www.cathrinewilhelmsen.net/preparing-taking-microsoft-exam-dp-200-implementing-azure-data-solution/) | [Exam Prep2](https://www.taygan.co/blog/2019/12/31/dp-200-implementing-an-azure-data-solution-exam-prep).  
+[Azure Learning (website)](https://docs.microsoft.com/en-us/users/alexmaccalman-4148/).  
+[Azure Fundementals Course (website)](https://marczak.io/az-900/).  
+[Azure for Everyone (website)](https://www.youtube.com/azure4everyone).  
+[Azure and R (repo)](https://github.com/revodavid/R-at-Microsoft).  
+[Data Engineering Associate (learning path)](https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer) | [Data Integration (learning path)](https://docs.microsoft.com/en-us/learn/paths/data-integration-scale-azure-data-factory/) | [Azure Machine Learning (learning path)](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/).  | [Azure Data Fundementals](https://docs.microsoft.com/en-us/users/microsoftazuretrainingandcertifications/collections/0kjyh8rn5gdrjj?source=docs). | [Power BI](https://docs.microsoft.com/en-us/learn/certifications/exams/da-100). 
+[Migrate SQL Workloads to Azure](https://docs.microsoft.com/en-us/learn/paths/migrate-sql-workloads-azure/).  
+[Modern Data Warehousing (video)](https://www.youtube.com/watch?v=lcFDrIbTyxE).  
+[Data Fundamentals Book](https://www.skillpipe.com/#/reader/6700b377-7e7a-54e2-9338-6c739a7efdec/content).  
+[Azure Modern Data Warehouse lab](https://github.com/Adatis/ModernDataWarehouseWorkshop).  
+[Azure AI Fundemental Exercises](https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3-create-image-classifier).  
+[Azure Data Engineering Labs (repo)](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions).  
+[DP-203T00-Data-Engineering-on-Microsoft-Azure](https://github.com/MicrosoftLearning/DP-203T00-Data-Engineering-on-Microsoft-Azure).  
+[Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
+### Docker/Kubernetetes  
+[Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
+[Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
+
+### Gitlab
+[Gitlab workflow (website)](https://shiny.rstudio.com/tutorial/).  
+
+
 ## Agile processes  
 [Epics, Features and User Stories](https://medium.com/webill/epics-features-and-user-stories-21be70d1ac17#:~:text=Epics%20%E2%80%94%20are%20the%20overarching%20project%20master%2C%20that,could%20also%20just%20carry%20the%20project%20code%20name).  
 [Define Features and Epics](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&tabs=agile-process).  
@@ -106,29 +142,7 @@ Single Value Decomposition
 [Tensor Flow Playgroud (website)](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.40502&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false).  |  [YouTube on Playground](https://www.youtube.com/watch?v=ru9dXF04iSE).  
 [Training TensoreFlow Model in Cloud (video)](https://rstudio.com/resources/webinars/training-your-tensorflow-models-in-the-cloud/).  
 
-## Cloud  
-### Azure 
-[ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
-[DP200 Exam Prep](https://www.cathrinewilhelmsen.net/preparing-taking-microsoft-exam-dp-200-implementing-azure-data-solution/) | [Exam Prep2](https://www.taygan.co/blog/2019/12/31/dp-200-implementing-an-azure-data-solution-exam-prep).  
-[Azure Learning (website)](https://docs.microsoft.com/en-us/users/alexmaccalman-4148/).  
-[Azure Fundementals Course (website)](https://marczak.io/az-900/).  
-[Azure for Everyone (website)](https://www.youtube.com/azure4everyone).  
-[Azure and R (repo)](https://github.com/revodavid/R-at-Microsoft).  
-[Data Engineering Associate (learning path)](https://docs.microsoft.com/en-us/learn/certifications/azure-data-engineer) | [Data Integration (learning path)](https://docs.microsoft.com/en-us/learn/paths/data-integration-scale-azure-data-factory/) | [Azure Machine Learning (learning path)](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/).  | [Azure Data Fundementals](https://docs.microsoft.com/en-us/users/microsoftazuretrainingandcertifications/collections/0kjyh8rn5gdrjj?source=docs). | [Power BI](https://docs.microsoft.com/en-us/learn/certifications/exams/da-100). 
-[Migrate SQL Workloads to Azure](https://docs.microsoft.com/en-us/learn/paths/migrate-sql-workloads-azure/).  
-[Modern Data Warehousing (video)](https://www.youtube.com/watch?v=lcFDrIbTyxE).  
-[Data Fundamentals Book](https://www.skillpipe.com/#/reader/6700b377-7e7a-54e2-9338-6c739a7efdec/content).  
-[Azure Modern Data Warehouse lab](https://github.com/Adatis/ModernDataWarehouseWorkshop).  
-[Azure AI Fundemental Exercises](https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3-create-image-classifier).  
-[Azure Data Engineering Labs (repo)](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions).  
-[DP-203T00-Data-Engineering-on-Microsoft-Azure](https://github.com/MicrosoftLearning/DP-203T00-Data-Engineering-on-Microsoft-Azure).  
-[Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
-### Docker/Kubernetetes  
-[Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
-[Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
 
-### Gitlab
-[Gitlab workflow (website)](https://shiny.rstudio.com/tutorial/).  
 
 ### Open Source Data Versioning  
 [Data Version Control (website)](https://dvc.org/).  
@@ -136,15 +150,6 @@ Single Value Decomposition
 ### MBSE  
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
 
-## Python  
-[Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
-[Automate the Boring Stuff](https://www.udemy.com/course/automate/learn/lecture/3465804#overview).  
-[Python for Everyone (website)](https://www.py4e.com/lessons).  
-[Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
-[Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
-[Reinforcement Learning (course)](https://www.coursera.org/specializations/reinforcement-learning?).  
-[ML Course in Python (website)](https://mlcourse.ai/).  
-[Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 
 [Leading with Technology Snehal Antani (podcast)](https://anchor.fm/def-community/episodes/Leading-with-Technology-Snehal-Antani---Tech-Leader-Series-1-egaono).  
 
