@@ -4,6 +4,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 ## Python  
 [Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
 [Automate the Boring Stuff](https://www.udemy.com/course/automate/learn/lecture/3465804#overview).  
+[Python Tutorial](https://docs.python.org/3/tutorial/index.html).  
 [Python for Everyone (website)](https://www.py4e.com/lessons).  
 [Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
 [Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
