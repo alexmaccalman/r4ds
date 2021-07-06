@@ -13,6 +13,8 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 
 ## Cloud  
+[CSE Playbook](https://microsoft.github.io/code-with-engineering-playbook/).  
+
 ### Azure 
 [ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
 [DP200 Exam Prep](https://www.cathrinewilhelmsen.net/preparing-taking-microsoft-exam-dp-200-implementing-azure-data-solution/) | [Exam Prep2](https://www.taygan.co/blog/2019/12/31/dp-200-implementing-an-azure-data-solution-exam-prep).  
