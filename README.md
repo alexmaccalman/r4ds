@@ -31,6 +31,9 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Azure Data Engineering Labs (repo)](https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions).  
 [DP-203T00-Data-Engineering-on-Microsoft-Azure](https://github.com/MicrosoftLearning/DP-203T00-Data-Engineering-on-Microsoft-Azure).  
 [Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
+### Data Engineering
+[DE Roadmap](https://link.medium.com/nTpi4WMMOhb).  
+
 ### Docker/Kubernetetes  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 [Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
