@@ -15,6 +15,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 
 ## Cloud  
 [CSE Playbook](https://microsoft.github.io/code-with-engineering-playbook/).  
+[MLOps](https://madewithml.com/).  
 
 ### Azure 
 [ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
@@ -162,6 +163,7 @@ Single Value Decomposition
 
 ## AI 
 [Berkeley AI Course (website)](http://ai.berkeley.edu/home.html).  
+[Keras](https://analyticsarora.com/complete-glossary-of-keras-neural-network-layers-with-code/).  
 
 
 
