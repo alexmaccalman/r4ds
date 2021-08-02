@@ -7,6 +7,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Python Tutorial](https://docs.python.org/3/tutorial/index.html).  
 [Pythin DS Tutorial](https://www.learndatasci.com/tutorials/).  
 [calmcode](https://calmcode.io/)/  
+[Python Github repos](https://levelup.gitconnected.com/25-github-repositories-every-python-developer-should-know-ac848f6aa1fe).  
 [Python for Everyone (website)](https://www.py4e.com/lessons).  
 [Python for Everyone (course)](https://www.coursera.org/specializations/python?=).  
 [Deep Learning (course)](https://www.coursera.org/specializations/deep-learning). 
