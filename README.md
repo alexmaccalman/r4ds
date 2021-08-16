@@ -37,6 +37,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
 ### Data Engineering
 [DE Roadmap](https://link.medium.com/nTpi4WMMOhb).  
+[Azure IOT Developer Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-220).  
 
 ### Docker/Kubernetetes  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
