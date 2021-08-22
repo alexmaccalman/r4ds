@@ -16,6 +16,9 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [ML Course in Python (website)](https://mlcourse.ai/).  
 [Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 
+### All Languages
+[all language tutorials](https://www.w3schools.com/python/default.asp). 
+
 ## Cloud  
 [CSE Playbook](https://microsoft.github.io/code-with-engineering-playbook/).  
 [MLOps](https://madewithml.com/).  
