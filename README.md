@@ -47,6 +47,10 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Azure IoT Fundementals](https://docs.microsoft.com/en-us/azure/iot-fundamentals/).  
 [RasberryPi Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/#getstarted).  
 [AZ-220 Github repo](https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer).  
+[Azure 220 Training](https://www.pluralsight.com/paths/microsoft-azure-iot-developer-az-220).  
+
+## AI Edge Engineer
+[Designing an Intelligent Edge in Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-intelligent-edge-designing?aid=7010a000001x3JXAAY&promo=&utm_source=non_branded&utm_medium=digital_paid_search_bing&utm_campaign=Bing_US_Dynamic&utm_content=&msclkid=6fd4945d88ac1a2efce5f51e02f9b2b1). 
 [Azure AI Edge Engineer](https://docs.microsoft.com/en-us/learn/paths/ai-edge-engineer/).  
 ## Azure Skill Bridge
 [skillbridge](https://www.skillpipe.com/#/bookshelf/books).  
