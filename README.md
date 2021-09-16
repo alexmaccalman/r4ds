@@ -16,6 +16,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Reinforcement Learning (course)](https://www.coursera.org/specializations/reinforcement-learning?).  
 [ML Course in Python (website)](https://mlcourse.ai/).  
 [Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
+[Applied Data Science Specialization](https://www.coursera.org/specializations/applied-data-science#courses).  
 
 ### All Languages
 [all language tutorials](https://www.w3schools.com/python/default.asp). 
