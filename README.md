@@ -1,5 +1,5 @@
 # Digital Skillset Roadmap  
-This site outlines my learning resources for this journey.  [Projects](https://towardsdatascience.com/the-step-by-step-curriculum-im-using-to-teach-myself-data-science-in-2021-c8eab834a87c).  
+This site outlines my learning resources for this journey.  [Projects](https://towardsdatascience.com/the-step-by-step-curriculum-im-using-to-teach-myself-data-science-in-2021-c8eab834a87c).  [DARPA Heilmeier Catechism the art of the start](https://www.darpa.mil/work-with-us/heilmeier-catechism).  
 
 ## Python  
 [Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
@@ -80,6 +80,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [RStudio webinars (videos)](https://rstudio.com/resources/webinars/).  
 [John Hopkins (Course)](http://datasciencespecialization.github.io/).  |   [John Hopkins Notes (Website)](http://sux13.github.io/DataScienceSpCourseNotes/).  
 [Introduction to Data Science with R (course)](https://www.oreilly.com/library/view/introduction-to-data/9781491915028/?cmp=yt-strata-books-videos-product-promo_introduction_to_data_science_with_r).  
+[Network Analysis with R](https://kateto.net/networks-r-igraph).  
 ## Importing Cleaning Tidying  
 ### R files manipulation  
 [HOW TO CREATE, DELETE, MOVE, AND MORE WITH FILES (website)](http://theautomatic.net/2018/07/11/manipulate-files-r/)  
