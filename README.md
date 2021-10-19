@@ -55,7 +55,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 
 ## Azure 104  
 [AZ 104 Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104).  
-[Azure Application Architecture Guide](Azure Application Architecture Guide).  
+[Azure Application Architecture Guide](https://docs.microsoft.com/en-us/azure/architecture/guide/).  
 ## Azure Skill Bridge
 [skillbridge](https://www.skillpipe.com/#/bookshelf/books).  
 ### Data Engineering
