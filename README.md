@@ -52,7 +52,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 ## AI Edge Engineer
 [Designing an Intelligent Edge in Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-intelligent-edge-designing?aid=7010a000001x3JXAAY&promo=&utm_source=non_branded&utm_medium=digital_paid_search_bing&utm_campaign=Bing_US_Dynamic&utm_content=&msclkid=6fd4945d88ac1a2efce5f51e02f9b2b1).   
 [Azure AI Edge Engineer](https://docs.microsoft.com/en-us/learn/paths/ai-edge-engineer/).  
-
+[Citizen AI with the Power Platform](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/ai/citizen-ai-power-platform).  
 ## Azure 104  
 [AZ 104 Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104).  
 [Azure Application Architecture Guide](https://docs.microsoft.com/en-us/azure/architecture/guide/).  
