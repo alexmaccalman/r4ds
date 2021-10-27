@@ -172,10 +172,11 @@ Single Value Decomposition
 [Part 3 sparklyr (video)](https://rstudio.com/resources/webinars/part-3-advanced-features-of-sparklyr/).  
 [Part 4 sparklyr (video)](https://rstudio.com/resources/webinars/part-4-understanding-sparklyr-deployment-modes/).  
 
-### Links to deep learning with R:  
+### Links to deep learning:  
 [Keras](https://blogs.rstudio.com/ai/posts/2018-01-11-keras-customer-churn). |  [Kera and LIME](https://iamkbpark.com/2018/01/22/deep-learning-with-keras-lime-in-r/)  
 [Tensor Flow Playgroud (website)](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.40502&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false).  |  [YouTube on Playground](https://www.youtube.com/watch?v=ru9dXF04iSE).  
 [Training TensoreFlow Model in Cloud (video)](https://rstudio.com/resources/webinars/training-your-tensorflow-models-in-the-cloud/).  
+[Introduction to Deep Learning](https://sebastianraschka.com/blog/2021/dl-course.html).  
 
 
 
