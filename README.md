@@ -65,6 +65,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 ### Docker/Kubernetetes  
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 [Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
+[Video on what a container is](https://www.youtube.com/watch?v=gFozhTXOx18).  
 
 ### Gitlab
 [Gitlab workflow (website)](https://shiny.rstudio.com/tutorial/).  
