@@ -55,6 +55,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Citizen AI with the Power Platform](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/ai/citizen-ai-power-platform).  
 ## Azure 104  
 [AZ 104 Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104).  
+[AZ104 Labs](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Instructions/Labs).  
 [Azure Application Architecture Guide](https://docs.microsoft.com/en-us/azure/architecture/guide/).  
 ## Azure Skill Bridge
 [skillbridge](https://www.skillpipe.com/#/bookshelf/books).  
