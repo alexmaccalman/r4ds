@@ -73,6 +73,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Git Commands](https://gist.github.com/gwenf/19e5748a5391929e8e938a22c8a4b3f2).  
 [Install Git](https://www.atlassian.com/git/tutorials/install-git).  
 [Generate new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).  
+[Version with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/).  
 
 ## Agile processes  
 [Epics, Features and User Stories](https://medium.com/webill/epics-features-and-user-stories-21be70d1ac17#:~:text=Epics%20%E2%80%94%20are%20the%20overarching%20project%20master%2C%20that,could%20also%20just%20carry%20the%20project%20code%20name).  
