@@ -79,6 +79,7 @@ Git tutorial part 2 from Bash terminal: gittutorial-2
 [git init](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init).  
 [VS Code with Git](https://docs.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2019).  
 [Gitlab Cheatshet] extension://elhekieabhbkpmcefcoobjddigjcaadp/viewer.html?pdfurl=https%3A%2F%2Fabout.gitlab.com%2Fimages%2Fpress%2Fgit-cheat-sheet.pdf&clen=86209&chunk=true  
+[Git rebase](https://www.w3docs.com/learn-git/git-rebase.html).  
 
 ## Agile processes  
 [Epics, Features and User Stories](https://medium.com/webill/epics-features-and-user-stories-21be70d1ac17#:~:text=Epics%20%E2%80%94%20are%20the%20overarching%20project%20master%2C%20that,could%20also%20just%20carry%20the%20project%20code%20name).  
