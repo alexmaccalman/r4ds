@@ -76,6 +76,8 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Version with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/).  
 Git tutorial part 1 from Bash terminal: gittutorial  
 Git tutorial part 2 from Bash terminal: gittutorial-2  
+[git init](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init).  
+[VS Code with Git](https://docs.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2019).  
 
 ## Agile processes  
 [Epics, Features and User Stories](https://medium.com/webill/epics-features-and-user-stories-21be70d1ac17#:~:text=Epics%20%E2%80%94%20are%20the%20overarching%20project%20master%2C%20that,could%20also%20just%20carry%20the%20project%20code%20name).  
