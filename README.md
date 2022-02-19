@@ -2,6 +2,7 @@
 This site outlines my learning resources for this journey.  [Projects](https://towardsdatascience.com/the-step-by-step-curriculum-im-using-to-teach-myself-data-science-in-2021-c8eab834a87c).  [DARPA Heilmeier Catechism the art of the start](https://www.darpa.mil/work-with-us/heilmeier-catechism).  
 
 ## Python  
+[Python for Data Science (26 wk)](https://towardsdatascience.com/a-complete-26-week-course-to-learn-python-for-data-science-in-2022-e95b67551df4).  
 [Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
 [Automate the Boring Stuff](https://www.udemy.com/course/automate/learn/lecture/3465804#overview).  
 [Python Tutorial](https://docs.python.org/3/tutorial/index.html).  
