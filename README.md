@@ -63,6 +63,14 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [skillbridge](https://www.skillpipe.com/#/bookshelf/books).  
 ### Data Engineering
 [DE Roadmap](https://link.medium.com/nTpi4WMMOhb).  
+## CSE topics  
+
+[Azure Stack Edge](https://docs.microsoft.com/en-us/azure/databox-online/)   
+[Azure Stack Edge Kubernetes](https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-overview)  
+[Docker Learning Path](https://www.docker.com/101-tutorial)   
+[Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/quickstart-docker-cli)   
+[Tutorial on Containerizing a .NET App](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)  
+[.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/)  
 
 
 ### Docker/Kubernetetes  
