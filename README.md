@@ -3,6 +3,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 
 ## Python  
 [Pandas](https://pandas.pydata.org/pandas-docs/stable//user_guide/dsintro.html).  
+[Matplotlib](https://matplotlib.org/stable/gallery/index.html).  
 [Python for Data Science (26 wk)](https://towardsdatascience.com/a-complete-26-week-course-to-learn-python-for-data-science-in-2022-e95b67551df4).  
 [Kaggle Learn Overview](https://www.kaggle.com/learn/overview).  
 [Automate the Boring Stuff](https://www.udemy.com/course/automate/learn/lecture/3465804#overview).  
