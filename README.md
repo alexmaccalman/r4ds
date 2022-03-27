@@ -187,6 +187,7 @@ Single Value Decomposition
 [What is a database model (website)](https://www.lucidchart.com/pages/database-diagram/database-models#section_0).  
 [SQL Practice](https://selectstarsql.com/).  
 [Databases in R](https://db.rstudio.com/).  
+[Query to reverse engineering DB](https://towardsdatascience.com/query-sql-server-system-tables-to-reverse-engineer-databases-fe26f98457d6).  
 
 ## Big Data in R  
 [Working with Big Data in R (video)](https://rstudio.com/resources/webinars/working-with-big-data-in-r/).  
