@@ -97,6 +97,7 @@ Git tutorial part 2 from Bash terminal: gittutorial-2
 ## Agile processes  
 [Epics, Features and User Stories](https://medium.com/webill/epics-features-and-user-stories-21be70d1ac17#:~:text=Epics%20%E2%80%94%20are%20the%20overarching%20project%20master%2C%20that,could%20also%20just%20carry%20the%20project%20code%20name).  
 [Define Features and Epics](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&tabs=agile-process).  
+[12 Factors](https://12factor.net/).  
 
 ## Statistics
 [StatQuest (videos)](https://statquest.org/video-index/).  
