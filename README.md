@@ -208,6 +208,7 @@ Single Value Decomposition
 
 ### Open Source Data Versioning  
 [Data Version Control (website)](https://dvc.org/).  
+[Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html).  
 
 ### MBSE  
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
