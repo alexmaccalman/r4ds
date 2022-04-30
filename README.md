@@ -28,7 +28,8 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [CSE Playbook](https://microsoft.github.io/code-with-engineering-playbook/).  
 [MLOps](https://madewithml.com/).  
 
-### Azure 
+### Azure  
+[Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/).  
 [ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
 [DP200 Exam Prep](https://www.cathrinewilhelmsen.net/preparing-taking-microsoft-exam-dp-200-implementing-azure-data-solution/) | [Exam Prep2](https://www.taygan.co/blog/2019/12/31/dp-200-implementing-an-azure-data-solution-exam-prep).  
 [Azure Learning (website)](https://docs.microsoft.com/en-us/users/alexmaccalman-4148/).  
