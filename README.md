@@ -22,6 +22,9 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Hands-on Machine Learning with Scikit learn Keras and Tensor Flow (book)](https://github.com/ageron/handson-ml2).  
 [Applied Data Science Specialization](https://www.coursera.org/specializations/applied-data-science#courses).  
 
+SQL   
+[SQL and Databases Learning](https://towardsdatascience.com/sql-and-databases-learning-a-guide-for-data-scientists-and-ml-engineers-a73875b0d6f2).  
+
 ### All Languages
 [all language tutorials](https://www.w3schools.com/python/default.asp). 
 
