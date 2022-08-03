@@ -51,6 +51,11 @@ SQL
 [Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
 [Synapse Analytics 3 hour Course](https://www.youtube.com/watch?v=lLrjaVdBuM0).  
 [Samples in Azure Synapse Analytics](https://azure.microsoft.com/en-us/blog/quickly-get-started-with-samples-in-azure-synapse-analytics/).  
+#### Azure Resume Cloud Challange  
+[Azure Challange Book](https://app.gumroad.com/confirm?destination=download_page&id=c5ba3279c698ec068550eff983b8491a).  
+[Steps](https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure). 
+[step video](https://youtu.be/ieYrBWmkfno).  
+
 #### AZURE IOT
 [Azure IOT Developer Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-220).  
 [Azure IoT Reference Architecture](https://azure.microsoft.com/mediahandler/files/resourcefiles/microsoft-azure-iot-reference-architecture/Microsoft_Azure_IoT_Reference_Architecture_2_1_1_update.pdf).  
