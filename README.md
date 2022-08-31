@@ -72,6 +72,7 @@ SQL
 [AZ 104 Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104).  
 [AZ104 Labs](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Instructions/Labs).  
 [Azure Application Architecture Guide](https://docs.microsoft.com/en-us/azure/architecture/guide/).  
+[AZ-104 RENEW](https://docs.microsoft.com/en-us/certifications/azure-administrator/renew/)
 ## Azure Skill Bridge
 [skillbridge](https://www.skillpipe.com/#/bookshelf/books).  
 ### Data Engineering
