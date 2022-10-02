@@ -33,6 +33,12 @@ SQL
 [MLOps](https://madewithml.com/).  
 
 ### Azure  
+
+### AZ-305  
+[AZ-305 Study Guide](https://www.thomasmaurer.ch/2021/10/az-305-study-guide-azure-solutions-architect/).  
+[AZ-305 Cheat Sheet](https://skillcertpro.com/wp-content/uploads/2021/12/AZ-305-Master-Cheat-Sheet.pdf).  
+
+
 [Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/).  
 [ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
 [DP200 Exam Prep](https://www.cathrinewilhelmsen.net/preparing-taking-microsoft-exam-dp-200-implementing-azure-data-solution/) | [Exam Prep2](https://www.taygan.co/blog/2019/12/31/dp-200-implementing-an-azure-data-solution-exam-prep).  
