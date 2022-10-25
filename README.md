@@ -38,6 +38,7 @@ SQL
 [AZ-305 Study Guide](https://www.thomasmaurer.ch/2021/10/az-305-study-guide-azure-solutions-architect/).  
 [AZ-305 Cheat Sheet](https://skillcertpro.com/wp-content/uploads/2021/12/AZ-305-Master-Cheat-Sheet.pdf).  
 
+[Terraform module dependencies](https://medium.com/hashicorp-engineering/creating-module-dependencies-in-terraform-0-13-4322702dac4a).  
 
 [Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/).  
 [ESI Exam Prep](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Hyda). 
