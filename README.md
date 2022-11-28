@@ -35,6 +35,10 @@ SQL
 [roadmaps](https://roadmap.sh/).  
 ### Azure  
 
+### AI 102  
+[Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)
+
+
 ### AZ-305  
 [AZ-305 Study Guide](https://www.thomasmaurer.ch/2021/10/az-305-study-guide-azure-solutions-architect/).  
 [AZ-305 Cheat Sheet](https://skillcertpro.com/wp-content/uploads/2021/12/AZ-305-Master-Cheat-Sheet.pdf).  
