@@ -32,6 +32,7 @@ SQL
 [CSE Playbook](https://microsoft.github.io/code-with-engineering-playbook/).  
 [MLOps](https://madewithml.com/).  
 [Azure Dev containers](https://github.com/microsoft/vscode-dev-containers/tree/main/containers).  
+[roadmaps](https://roadmap.sh/).  
 ### Azure  
 
 ### AZ-305  
