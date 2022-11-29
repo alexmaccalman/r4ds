@@ -36,7 +36,8 @@ SQL
 ### Azure  
 
 ### AI 102  
-[Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)
+[Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)  
+[AI for Good](https://www.microsoft.com/en-us/ai/ai-lab).  
 
 
 ### AZ-305  
