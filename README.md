@@ -38,6 +38,8 @@ SQL
 ### AI 102  
 [Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)  
 [AI for Good](https://www.microsoft.com/en-us/ai/ai-lab).  
+[Gov Cloud search knowlege mining](https://github.com/usri/azuregov-search-knowledge-mining#knowledge-mining-solution-accelerator-for-azure-government).  
+[Commerial Cloud search knowlege mining](https://github.com/Azure-Samples/azure-search-knowledge-mining).  
 
 
 ### AZ-305  
