@@ -40,6 +40,7 @@ SQL
 [AI for Good](https://www.microsoft.com/en-us/ai/ai-lab).  
 [Gov Cloud search knowlege mining](https://github.com/usri/azuregov-search-knowledge-mining#knowledge-mining-solution-accelerator-for-azure-government).  
 [Commerial Cloud search knowlege mining](https://github.com/Azure-Samples/azure-search-knowledge-mining).  
+[AI Knowledge Mining Bootcamp](https://github.com/MicrosoftLearning/LearnAI-KnowledgeMiningBootcamp).  
 
 
 ### AZ-305  
