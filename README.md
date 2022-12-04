@@ -41,6 +41,8 @@ SQL
 [Gov Cloud search knowlege mining](https://github.com/usri/azuregov-search-knowledge-mining#knowledge-mining-solution-accelerator-for-azure-government).  
 [Commerial Cloud search knowlege mining](https://github.com/Azure-Samples/azure-search-knowledge-mining).  
 [AI Knowledge Mining Bootcamp](https://github.com/MicrosoftLearning/LearnAI-KnowledgeMiningBootcamp).  
+[Azure Search Power Skills, custom skills for Azure Cognitive Serach](https://github.com/Azure-Samples/azure-search-power-skills).  
+
 
 
 ### AZ-305  
