@@ -36,7 +36,7 @@ SQL
 ### Azure  
 
 ### AI 102  
-{AI 102 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/ai-102)  
+[AI 102 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/ai-102)  
 [Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)  
 [AI for Good](https://www.microsoft.com/en-us/ai/ai-lab).  
 [Gov Cloud search knowlege mining](https://github.com/usri/azuregov-search-knowledge-mining#knowledge-mining-solution-accelerator-for-azure-government).  
