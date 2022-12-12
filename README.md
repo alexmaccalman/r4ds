@@ -47,6 +47,8 @@ SQL
 ### AZ 204  
 [AZ 204 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/az-204).  
 [az 204 Github Labs](https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/).  
+[Run app in App service from ZIP package](https://learn.microsoft.com/en-us/azure/app-service/deploy-run-package).  
+
 
 
 ### AZ-305  
