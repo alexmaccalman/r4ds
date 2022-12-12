@@ -36,6 +36,7 @@ SQL
 ### Azure  
 
 ### AI 102  
+{AI 102 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/ai-102)  
 [Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)  
 [AI for Good](https://www.microsoft.com/en-us/ai/ai-lab).  
 [Gov Cloud search knowlege mining](https://github.com/usri/azuregov-search-knowledge-mining#knowledge-mining-solution-accelerator-for-azure-government).  
@@ -43,6 +44,9 @@ SQL
 [AI Knowledge Mining Bootcamp](https://github.com/MicrosoftLearning/LearnAI-KnowledgeMiningBootcamp).  
 [Azure Search Power Skills, custom skills for Azure Cognitive Serach](https://github.com/Azure-Samples/azure-search-power-skills).  
 
+### AZ 204  
+[AZ 204 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/az-204).  
+[az 204 Github Labs](https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/).  
 
 
 ### AZ-305  
