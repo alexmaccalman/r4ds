@@ -33,6 +33,8 @@ SQL
 [MLOps](https://madewithml.com/).  
 [Azure Dev containers](https://github.com/microsoft/vscode-dev-containers/tree/main/containers).  
 [roadmaps](https://roadmap.sh/).  
+[Teraform for Rancher](https://github.com/rancherfederal/rke2-azure-tf).  
+[Rancher for Gov](https://github.com/rancher/rke2).  
 ### Azure  
 
 ### AI 102  
