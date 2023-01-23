@@ -37,6 +37,8 @@ SQL
 [Rancher for Gov](https://github.com/rancher/rke2).  
 ### Azure  
 
+### DP 302  
+[DP 302 RENEWAL](https://learn.microsoft.com/en-us/certifications/azure-data-engineer/renew/).  
 ### AI 102  
 [AI 102 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/ai-102)  
 [Mass Ingestion of Electronic Documents](https://github.com/Azure/cognitive-services)  
