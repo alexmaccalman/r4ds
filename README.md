@@ -118,6 +118,12 @@ SQL
 [Open Web Application Security Project Cheatsheets](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).  
 [Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials/azure-get-started).  
 [Terratest](https://terratest.gruntwork.io/).  
+[GitOps](https://www.gitops.tech/).  
+[Flux - keepong k8 in synch with configuration](https://github.com/fluxcd/flux2).  
+[Manage Helm Charts](https://github.com/helm/helm).  
+[Kustomize - manage k8s](https://kustomize.io/).  
+[RepoOne - DoD container registry](https://repo1.dso.mil/users/sign_in).  
+
 
 
 ### Docker/Kubernetetes  
