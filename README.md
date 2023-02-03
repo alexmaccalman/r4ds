@@ -116,6 +116,8 @@ SQL
 [.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/)  
 [WebDev Bootstrap](https://getbootstrap.com/).  
 [Open Web Application Security Project Cheatsheets](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).  
+[Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials/azure-get-started).  
+[Terratest](https://terratest.gruntwork.io/).  
 
 
 ### Docker/Kubernetetes  
