@@ -36,6 +36,7 @@ SQL
 [Teraform for Rancher](https://github.com/rancherfederal/rke2-azure-tf).  
 [Rancher for Gov](https://github.com/rancher/rke2).  
 ### Azure  
+[Azure Services Powerview](https://azurecharts.com/overview?m=adv).  
 
 ### DP 302  
 [DP 302 RENEWAL](https://learn.microsoft.com/en-us/certifications/azure-data-engineer/renew/).  
@@ -114,6 +115,7 @@ SQL
 [Tutorial on Containerizing a .NET App](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)  
 [.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/)  
 [WebDev Bootstrap](https://getbootstrap.com/).  
+[Open Web Application Security Project Cheatsheets](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).  
 
 
 ### Docker/Kubernetetes  
