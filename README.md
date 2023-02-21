@@ -38,6 +38,26 @@ SQL
 [roadmaps](https://roadmap.sh/).  
 [Teraform for Rancher](https://github.com/rancherfederal/rke2-azure-tf).  
 [Rancher for Gov](https://github.com/rancher/rke2).  
+[Microsoft Industry Solution Engineering Government MPO](https://github.com/CSEMissionPlatformOps).  
+[Coral Mission Platforem](https://github.com/orgs/CSEMissionPlatformOps/teams/coral-users/repositories).  
+
+## CSE topics  
+[Azure Stack Edge](https://docs.microsoft.com/en-us/azure/databox-online/)   
+[Azure Stack Edge Kubernetes](https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-overview)  
+[Docker Learning Path](https://www.docker.com/101-tutorial)   
+[Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/quickstart-docker-cli)   
+[Tutorial on Containerizing a .NET App](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)  
+[.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/)  
+[WebDev Bootstrap](https://getbootstrap.com/).  
+[Open Web Application Security Project Cheatsheets](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).  
+[Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials/azure-get-started).  
+[Terratest](https://terratest.gruntwork.io/).  
+[GitOps](https://www.gitops.tech/).  
+[Flux - keepong k8 in synch with configuration](https://github.com/fluxcd/flux2).  
+[Manage Helm Charts](https://github.com/helm/helm).  
+[Kustomize - manage k8s](https://kustomize.io/).  
+[RepoOne - DoD container registry](https://repo1.dso.mil/users/sign_in).  
+
 ### Azure  
 [Azure Services Powerview](https://azurecharts.com/overview?m=adv).  
 
@@ -56,8 +76,6 @@ SQL
 [AZ 204 Learning Path](https://learn.microsoft.com/en-us/certifications/exams/az-204).  
 [az 204 Github Labs](https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/).  
 [Run app in App service from ZIP package](https://learn.microsoft.com/en-us/azure/app-service/deploy-run-package).  
-
-
 
 ### AZ-305  
 [AZ-305 Study Guide](https://www.thomasmaurer.ch/2021/10/az-305-study-guide-azure-solutions-architect/).  
@@ -83,6 +101,7 @@ SQL
 [Landing Zones](https://github.com/Azure/caf-terraform-landingzones).  
 [Synapse Analytics 3 hour Course](https://www.youtube.com/watch?v=lLrjaVdBuM0).  
 [Samples in Azure Synapse Analytics](https://azure.microsoft.com/en-us/blog/quickly-get-started-with-samples-in-azure-synapse-analytics/).  
+
 #### Azure Resume Cloud Challange  
 [Azure Challange Book](https://app.gumroad.com/confirm?destination=download_page&id=c5ba3279c698ec068550eff983b8491a).  
 [Steps](https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure). 
@@ -100,6 +119,7 @@ SQL
 [Designing an Intelligent Edge in Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-intelligent-edge-designing?aid=7010a000001x3JXAAY&promo=&utm_source=non_branded&utm_medium=digital_paid_search_bing&utm_campaign=Bing_US_Dynamic&utm_content=&msclkid=6fd4945d88ac1a2efce5f51e02f9b2b1).   
 [Azure AI Edge Engineer](https://docs.microsoft.com/en-us/learn/paths/ai-edge-engineer/).  
 [Citizen AI with the Power Platform](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/ai/citizen-ai-power-platform).  
+
 ## Azure 104  
 [AZ 104 Learning Path](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104).  
 [AZ104 Labs](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Instructions/Labs).  
@@ -109,24 +129,6 @@ SQL
 [skillbridge](https://www.skillpipe.com/#/bookshelf/books).  
 ### Data Engineering
 [DE Roadmap](https://link.medium.com/nTpi4WMMOhb).  
-## CSE topics  
-
-[Azure Stack Edge](https://docs.microsoft.com/en-us/azure/databox-online/)   
-[Azure Stack Edge Kubernetes](https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-kubernetes-overview)  
-[Docker Learning Path](https://www.docker.com/101-tutorial)   
-[Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/quickstart-docker-cli)   
-[Tutorial on Containerizing a .NET App](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)  
-[.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/)  
-[WebDev Bootstrap](https://getbootstrap.com/).  
-[Open Web Application Security Project Cheatsheets](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).  
-[Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials/azure-get-started).  
-[Terratest](https://terratest.gruntwork.io/).  
-[GitOps](https://www.gitops.tech/).  
-[Flux - keepong k8 in synch with configuration](https://github.com/fluxcd/flux2).  
-[Manage Helm Charts](https://github.com/helm/helm).  
-[Kustomize - manage k8s](https://kustomize.io/).  
-[RepoOne - DoD container registry](https://repo1.dso.mil/users/sign_in).  
-
 
 
 ### Docker/Kubernetetes  
