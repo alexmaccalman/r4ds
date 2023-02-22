@@ -5,6 +5,11 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Learn to Cloud](https://learntocloud.guide/).  
 [YouTube into](https://www.youtube.com/watch?v=vWerXJrNw2g&feature=youtu.be).  
 
+## Kubernetes  
+[Docker Getting Started](https://docs.docker.com/get-started/).  
+[K8s Getting Started](https://kubernetes.io/docs/setup/).  
+[Zarf](https://zarf.dev/).  
+
 ## Python  
 [Pandas](https://pandas.pydata.org/pandas-docs/stable//user_guide/dsintro.html).  
 [Matplotlib](https://matplotlib.org/stable/gallery/index.html).  
