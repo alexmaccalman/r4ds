@@ -9,6 +9,8 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Docker Getting Started](https://docs.docker.com/get-started/).  
 [K8s Getting Started](https://kubernetes.io/docs/setup/).  
 [Zarf](https://zarf.dev/).  
+[Vishwas Vids](https://drive.google.com/drive/folders/1LMSERa5sJg7B8By5bKVmY_dZ4cmSoSH3).  
+[Viswas GitHub for AKS](https://github.com/vlele/aks-workshop).  
 
 ## Python  
 [Pandas](https://pandas.pydata.org/pandas-docs/stable//user_guide/dsintro.html).  
