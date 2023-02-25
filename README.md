@@ -11,6 +11,8 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Zarf](https://zarf.dev/).  
 [Vishwas Vids](https://drive.google.com/drive/folders/1LMSERa5sJg7B8By5bKVmY_dZ4cmSoSH3).  
 [Viswas GitHub for AKS](https://github.com/vlele/aks-workshop).  
+[Python Microservices With gRPC](https://realpython.com/python-microservices-grpc/).  
+[When to use microservices](https://www.youtube.com/watch?v=GBTdnfD6s5Q).  
 
 ## Python  
 [Pandas](https://pandas.pydata.org/pandas-docs/stable//user_guide/dsintro.html).  
