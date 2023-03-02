@@ -14,6 +14,8 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Python Microservices With gRPC](https://realpython.com/python-microservices-grpc/).  
 [When to use microservices](https://www.youtube.com/watch?v=GBTdnfD6s5Q).  
 
+## REST APIs  
+[Python and REST APIs](https://realpython.com/api-integration-in-python/) [Part 1](https://realpython.com/flask-connexion-rest-api/) [Part 2](https://realpython.com/flask-connexion-rest-api-part-2/) [Part 3](https://realpython.com/flask-connexion-rest-api-part-3/).  
 ## Python  
 [Pandas](https://pandas.pydata.org/pandas-docs/stable//user_guide/dsintro.html).  
 [Matplotlib](https://matplotlib.org/stable/gallery/index.html).  
