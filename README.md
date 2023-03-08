@@ -13,6 +13,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Viswas GitHub for AKS](https://github.com/vlele/aks-workshop).  
 [Python Microservices With gRPC](https://realpython.com/python-microservices-grpc/).  
 [When to use microservices](https://www.youtube.com/watch?v=GBTdnfD6s5Q).  
+[kompose to convert docker-compose to K8s](https://kompose.io/).  
 
 ## REST APIs  
 [Python and REST APIs](https://realpython.com/api-integration-in-python/)    [Part 1](https://realpython.com/flask-connexion-rest-api/)    [Part 2](https://realpython.com/flask-connexion-rest-api-part-2/)    [Part 3](https://realpython.com/flask-connexion-rest-api-part-3/).  
