@@ -4,7 +4,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 ## Learn to Cloud  
 [Learn to Cloud](https://learntocloud.guide/).  
 [YouTube into](https://www.youtube.com/watch?v=vWerXJrNw2g&feature=youtu.be).  
-[WhatTheHack](https://github.com/microsoft/WhatTheHack).  
+[WhatTheHack](https://microsoft.github.io/WhatTheHack/.  
 
 ## Kubernetes  
 [Docker Getting Started](https://docs.docker.com/get-started/).  
