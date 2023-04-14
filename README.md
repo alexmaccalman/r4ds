@@ -70,6 +70,7 @@ SQL
 [Manage Helm Charts](https://github.com/helm/helm).  
 [Kustomize - manage k8s](https://kustomize.io/).  
 [RepoOne - DoD container registry](https://repo1.dso.mil/users/sign_in).  
+[Flux Tutorial](https://techcommunity.microsoft.com/t5/azure-global/gitops-and-secret-management-with-aks-flux-cd-sops-and-azure-key/ba-p/2280068)
 
 ### Azure  
 [Azure Services Powerview](https://azurecharts.com/overview?m=adv).  
