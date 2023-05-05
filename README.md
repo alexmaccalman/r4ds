@@ -6,6 +6,13 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [YouTube into](https://www.youtube.com/watch?v=vWerXJrNw2g&feature=youtu.be).  
 [WhatTheHack](https://microsoft.github.io/WhatTheHack/.  
 
+## LLM Learning  
+[Prompt Engineering for Devs](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/).  
+[AutoGPT](https://www.kdnuggets.com/2023/04/autogpt-everything-need-know.html).  
+[Data Science with ChatGPT](https://www.kdnuggets.com/2023/03/automate-boring-stuff-chatgpt-python.html).  
+[LangChain](https://www.kdnuggets.com/2023/04/langchain-101-build-gptpowered-applications.html). 
+[Azure OpenAI and Cognitive Search](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087).  
+
 ## Kubernetes  
 [Docker Getting Started](https://docs.docker.com/get-started/).  
 [K8s Getting Started](https://kubernetes.io/docs/setup/).  
@@ -149,6 +156,15 @@ SQL
 [Beginner (course)](https://www.udemy.com/course/learn-docker/learn/lecture/7838182#overview).  
 [Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes).  
 [Video on what a container is](https://www.youtube.com/watch?v=gFozhTXOx18).  
+
+## Azure HCI  
+[Microsoft Azure Stack HCI | Dell USA](https://www.dell.com/en-us/dt/hyperconverged-infrastructure/microsoft-azure-stack/microsoft-azure-stack-hci.htm?gacd=9650523-1073-5763017-266683695-0&dgc=st&&gclid=6a078c6a33db1f39d7ffe8535f6d83e4&gclsrc=3p.ds&&msclkid=6a078c6a33db1f39d7ffe8535f6d83e4#tab0=0).  
+[Azure Stack HCI solution overview - Azure Stack HCI | Microsoft Learn](https://learn.microsoft.com/en-us/azure-stack/hci/overview).  
+[Azure Stack Hub, HCI and Edge - .matrixpost.net](https://blog.matrixpost.net/azure-stack-hub-hci-and-edge/).  
+[Azure Stack HCI – Hyperconverged Infrastructure | Microsoft Azure](https://azure.microsoft.com/en-us/products/azure-stack/hci/).  
+[What's new for Azure Stack HCI at Microsoft Ignite 2022 - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/azure-stack-blog/what-s-new-for-azure-stack-hci-at-microsoft-ignite-2022/ba-p/3650949).  
+[How to enable Microsoft Defender for Containers in Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable?tabs=aks-deploy-portal%2Ck8s-deploy-asc%2Ck8s-verify-asc%2Ck8s-remove-arc%2Caks-removeprofile-api&pivots=defender-for-container-aks).  
+
 
 ### Github
 [Git Commands](https://gist.github.com/gwenf/19e5748a5391929e8e938a22c8a4b3f2).  
