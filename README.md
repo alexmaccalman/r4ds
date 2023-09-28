@@ -16,6 +16,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [LangChain](https://www.kdnuggets.com/2023/04/langchain-101-build-gptpowered-applications.html).     
 [Azure OpenAI and Cognitive Search](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087).   
 [LeapFrog AI](https://github.com/defenseunicorns/leapfrogai).  
+[RAG or Finetuning?](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7).  
 
 ## Kubernetes  
 [Docker Getting Started](https://docs.docker.com/get-started/).  
