@@ -18,6 +18,10 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [LeapFrog AI](https://github.com/defenseunicorns/leapfrogai).  
 [RAG or Finetuning?](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7).  
 
+## Data Mesh  
+[Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html).  
+[Data Mesh Templates](https://www.datamesh-architecture.com/).  
+
 ## Kubernetes  
 [Docker Getting Started](https://docs.docker.com/get-started/).  
 [K8s Getting Started](https://kubernetes.io/docs/setup/).  
@@ -298,7 +302,6 @@ Single Value Decomposition
 
 ### Open Source Data Versioning  
 [Data Version Control (website)](https://dvc.org/).  
-[Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html).  
 
 ### MBSE  
 [MagicDraw and DoDAF (videos)](https://www.milsuite.mil/video/search&owner=monte.l.porter2&editor=1).  
