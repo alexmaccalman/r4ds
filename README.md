@@ -17,6 +17,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Azure OpenAI and Cognitive Search](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087).   
 [LeapFrog AI](https://github.com/defenseunicorns/leapfrogai).  
 [RAG or Finetuning?](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7).  
+[Leapfrog AI webpage](https://leapfrog.ai/).  
 
 ## Data Mesh  
 [Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html).  
