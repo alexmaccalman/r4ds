@@ -23,6 +23,9 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html).  
 [Data Mesh Templates](https://www.datamesh-architecture.com/).  
 
+## Graph Database Analysis  
+[Neo4J Book](https://go.neo4j.com/rs/710-RRC-335/images/Building-Knowledge-Graphs-Practitioner%27s-Guide-OReilly-book.pdf?_gl=1*4j49dy*_ga*NzkyODc0MTIuMTY5ODE2NDMyNw..*_ga_DL38Q8KGQC*MTY5ODE2NDMyNC4xLjEuMTY5ODE2NDM5Ny43LjAuMA..&_ga=2.88028635.279630234.1698164345-79287412.1698164327).  
+
 ## Kubernetes  
 [Docker Getting Started](https://docs.docker.com/get-started/).  
 [K8s Getting Started](https://kubernetes.io/docs/setup/).  
