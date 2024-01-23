@@ -18,6 +18,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [LeapFrog AI](https://github.com/defenseunicorns/leapfrogai).  
 [RAG or Finetuning?](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7).  
 [Leapfrog AI webpage](https://leapfrog.ai/).  
+[Leapfrog Deployment Guide](https://github.com/defenseunicorns/leapfrogai-deployment).  
 
 ## Data Mesh  
 [Data Mesh](https://martinfowler.com/articles/data-monolith-to-mesh.html).  
