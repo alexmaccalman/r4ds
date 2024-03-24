@@ -10,6 +10,7 @@ This site outlines my learning resources for this journey.  [Projects](https://t
 [WhatTheHack](https://microsoft.github.io/WhatTheHack/).  
 
 ## LLM Learning  
+[Deep Learning Short Course](https://www.deeplearning.ai/short-courses/).  
 [Prompt Engineering for Devs](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/).    
 [AutoGPT](https://www.kdnuggets.com/2023/04/autogpt-everything-need-know.html).    
 [Data Science with ChatGPT](https://www.kdnuggets.com/2023/03/automate-boring-stuff-chatgpt-python.html).    
